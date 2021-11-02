@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/css/base.css">
+    <link rel="stylesheet" href="../asset/css/event.css">
+    <link rel="stylesheet" href="../asset/css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="app">
+        <nav class="header">
+            <div class="header__logo"></div>
+            <div class="header__events-and-tournaments">
+              <a href="#">Events</a>
+              <a href="#">Tournaments</a>
+            </div>
+            <div class="header__search">
+              <input type="text" placeholder="Search" class="header__search-input" />
+              <button class="header__search-btn button secondary-button">
+                <img src="./images/search-solid.svg" alt="search" width="20px" />
+              </button>
+            </div>
+            <div class="header__user">
+              <button class="header__user-login-btn button">Log in</button>
+              <button class="header__user-signup-btn button secondary-button">Sign up</button>
+            </div>
+          </nav>
+        <div class="grid">
+            <div class="event-tab">
+                    <h3 class="event__title">Sự kiện nổi bật</h3>
+                    <div class="event__content">
+                        <img src="../asset/img/event_major.png" 
+                        alt="" class="event__content-img">
+                        <ul class="slick-dots">
+                            <li class="slick-item slick--active">
+                                <button class="slick-btn "></button>
+                            </li>
+                            <li class="slick-item">
+                                <button class="slick-btn"></button>
+                            </li>
+                            <li class="slick-item">
+                                <button class="slick-btn"></button>
+                            </li>
+                            <li class="slick-item">
+                                <button class="slick-btn"></button>
+                            </li>
+                            <li class="slick-item">
+                                <button class="slick-btn"></button>
+                            </li>
+                        </ul>
+                </div>
+                
+            </div>
+            <div class="event-tab">
+                <h3 class="event__title">Đang diễn ra</h3>
+                <div class="event-list">
+                    <div class="event-item">
+                        <img src="../asset/img/event_naraka.png" alt="" class="event-item__img">
+                        <p class="event-item__name">Naraka</p>
+                        <p class="event-item__date">18:00 31/10/2021</p>
+                        <button class="event-item__btn">Tham gia</button>
+                    </div>
+                    <div class="event-item">
+                        <img src="../asset/img/event_lienquan.png" alt="" class="event-item__img">
+                        <p class="event-item__name">Lien Quan Mobile</p>
+                        <p class="event-item__date">7:00 3/11/2021</p>
+                        <button class="event-item__btn">Tham gia</button>
+                    </div>
+                    <div class="event-item">
+                        <img src="../asset/img/event_major.png" alt="" class="event-item__img">
+                        <p class="event-item__name">Csgo Major</p>
+                        <p class="event-item__date">21:00 01/11/2021</p>
+                        <button class="event-item__btn">Tham gia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+   
+   <script src="./app.js">    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

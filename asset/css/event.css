@@ -1,0 +1,126 @@
+
+.app {
+    background-color: var(--white-color);
+
+}
+.event-tab {   
+    padding: 10px;
+}
+.event__content {
+    display: flex;
+    position: relative;
+    height: 652px;
+}
+.event__title {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.event__content-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.slick-dots {
+    position:absolute ;
+    padding: 0;
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.slick-item {
+
+}
+.slick-btn {
+    cursor: pointer;
+    border: none;
+    background: hsla(0,0%,100%,.5);
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    margin: 0 6px 0 6px;
+    width: 14px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+}
+.slick--active .slick-btn{
+    border-radius: 15px;
+    width: 30px;
+    background-color: var(--white-color);
+}
+.ongoing-event {
+   width: 50%;
+   
+}
+.ongoing-event__title {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 700;
+    
+ }
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    
+}
+.event-item {
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.event-item__img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+.event-item__name {
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 15px 0 0 0;
+}
+.event-item__date {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    line-height: 24px;
+}
+.event-item__btn {
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    border: none;
+    padding: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 30px;
+    cursor: pointer;
+}

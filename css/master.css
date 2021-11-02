@@ -1,0 +1,48 @@
+
+:root {
+  --primary-color: rgb(26, 148, 255);
+  --secondary-color: rgb(22, 124, 212);
+  --hover-color: rgb(19, 110, 190);
+  --text-color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.button:hover,
+.hoverable-item:hover {
+  cursor: pointer;
+}
+
+.secondary-button {
+  transition: background-color 0.1s ease-out;
+}
+
+.secondary-button:hover {
+  background-color: var(--hover-color);
+}
+
+
+.clearfix:before {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.side-nav {
+  box-shadow: 1px 0 3px rgb(0 0 0 / 20%);
+}
+
+.channel-item {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}

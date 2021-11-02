@@ -1,0 +1,15 @@
+
+.side-nav {
+  position: fixed;
+  background-color: rgb(252, 252, 252);
+  top: 50px;
+  width: 75px;
+  height: calc(100vh - 50px);
+}
+
+.main-content {
+  position: absolute;
+  top: 50px;
+  left: 75px; 
+  width: calc(100% - 75px);
+}

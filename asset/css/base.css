@@ -1,0 +1,61 @@
+:root {
+    --primary-color:rgb(26, 148, 255);
+    --primary-color-rgba:rgba(26, 148, 255,0.5);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdbdb;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* Hack font size 1rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto; /* căn giữa khối này và khối khác */
+}
+
+.gird__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ANIMATION */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Style BTN */
+.style-btn-normal {
+    height: 60%;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
