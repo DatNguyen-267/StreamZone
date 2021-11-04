@@ -1,0 +1,4 @@
+.main__interact-zone {
+  display: flex;
+  height: calc(80vh);
+}
