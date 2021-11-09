@@ -85,6 +85,17 @@ a {
   background-color: var(--primary-color);
 }
 
+.header__events-and-tournaments a {
+  color: var(--white-color);
+  font-size: 1.875em;
+  font-weight: bold;
+  transition: color 0.1s ease-out;
+}
+
+.header__events-and-tournaments a:hover {
+  color: var(--hover-color);
+}
+
 /* SEARCH */
 .header__search {
   background-color: var(--primary-color);
@@ -194,6 +205,7 @@ a {
   border-radius: 10px;
 }
 
+
 /* style video container */
 
 .video-container {
@@ -202,6 +214,8 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .video-container:hover .control {
