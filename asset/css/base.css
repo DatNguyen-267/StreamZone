@@ -136,6 +136,7 @@ a {
   min-width: 100px;
   font-weight: bold;
   color: white;
+  border-radius: 5px;
 }
 
 .header__user-login-button {
@@ -176,7 +177,6 @@ a {
   height: 60%;
   padding: 5px;
   border: 0;
-  border-radius: 5px;
 }
 
 .style-btn-hover {
