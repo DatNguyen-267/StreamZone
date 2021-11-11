@@ -43,9 +43,6 @@
 }
 .list-stream-item {
     margin-bottom: 56px;
-    transition: transform ease-in 10s;
-    will-change: transform;
-    
 }
 .list-stream-item .list-stream-item__header{
     transition: transform ease-in 0.1s;
