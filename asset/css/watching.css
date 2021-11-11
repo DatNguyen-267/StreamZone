@@ -1,0 +1,22 @@
+.main {
+  position: absolute;
+  top: 50px;
+  left: 75px; 
+  width: calc(100% - 75px);
+}
+
+.main__interact-zone {
+  display: flex;
+  height: calc(80vh);
+}
+
+
+.main__live-player {
+  width: 72%;
+  background-color: black;
+}
+
+.main__chat-channel {
+  width: 28%;
+  background-color: rgb(3, 172, 3);
+}

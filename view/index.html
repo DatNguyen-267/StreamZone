@@ -6,46 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stream Zone</title>
 
-    <link rel="stylesheet" href="./css/master.css" />
-    <link rel="stylesheet" href="./css/styles-index.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/video.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/base.css" />
+    <link rel="stylesheet" href="../asset/css/index.css">
   </head>
   <body>
-    <nav class="top-nav">
-      <div class="logo"></div>
-      <div class="events-and-tournaments">
-        <a href="#">Events</a>
+    <nav class="header">
+      <div class="header__logo"></div>
+      <div class="header__events-and-tournaments">
+        <a href="./event.html">Events</a>
         <a href="#">Tournaments</a>
       </div>
-      <div class="search">
-        <input type="text" placeholder="Search" class="search-input" />
-        <button class="button search-button secondary-button">
-          <img src="./images/search-solid.svg" alt="search" width="20px" />
+      <div class="header__search">
+        <input type="text" placeholder="Search" class="header__search-input" />
+        <button class="header__search-button style-btn-normal style-btn-hover">
+          <img src="../images/search-solid.svg" alt="search" width="20px" />
         </button>
       </div>
-      <div class="login-and-signup">
-        <button class="login-button button">Log in</button>
-        <button class="signup-button button secondary-button">Sign up</button>
+      <div class="header__user">
+        <button class="header__user-login-button style-btn-normal">Log in</button>
+        <button class="header__user-signup-button style-btn-normal style-btn-hover">Sign up</button>
       </div>
     </nav>
     <main>
       <div class="side-nav">
-        <div class="quick-nav-channel__list">
-          <div class="channel-item hoverable-item"></div>
-          <div class="channel-item hoverable-item"></div>
-          <div class="channel-item hoverable-item"></div>
-          <div class="channel-item hoverable-item"></div>
-          <div class="channel-item hoverable-item"></div>
-          <div class="channel-item hoverable-item"></div>
+        <div class="side-nav__channel-list">
+          <div class="side-nav__channel-item"></div>
+          <div class="side-nav__channel-item"></div>
+          <div class="side-nav__channel-item"></div>
+          <div class="side-nav__channel-item"></div>
+          <div class="side-nav__channel-item"></div>
+          <div class="side-nav__channel-item"></div>
         </div>
       </div>
-      <div class="main-content">
-        <div class="live">
-          <div class="live__player">
+      <div class="main">
+        <div class="main__live-area">
+          <div class="main__live-player">
             <div class="video-container">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/5qap5aO4i9A"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
               <!-- <div class="control">
                 <div class="play-and-volume">
                   <button class="play-button">
@@ -67,70 +72,91 @@
               </div> -->
             </div>
           </div>
-          <div class="live__list">
+          <div class="main__live-list">
             <!-- xypzmu5mMPY -->
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg"
+                alt=""
+              />
             </div>
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/xypzmu5mMPY/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/xypzmu5mMPY/hqdefault.jpg"
+                alt=""
+              />
             </div>
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/IPfJnp1guPc/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/IPfJnp1guPc/hqdefault.jpg"
+                alt=""
+              />
             </div>
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/7FtXrqq1He8/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/7FtXrqq1He8/hqdefault.jpg"
+                alt=""
+              />
             </div>
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/WzzcgUpI1kU/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/WzzcgUpI1kU/hqdefault.jpg"
+                alt=""
+              />
             </div>
-            <div class="live__item">
-              <img src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg" alt="">
+            <div class="main__live-item">
+              <img
+                src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="popular-channels">
-          <h2>Nổi bật</h2>
-          <div class="list">
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
-            <div class="avatar hoverable-item"></div>
+        <div class="main__popular-channels">
+          <h1>Nổi bật</h1>
+          <div class="main__list">
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
+            <div class="main__popular-avatar"></div>
           </div>
         </div>
-        <div class="recommend">
-          <h2>Đề xuất</h2>
-          <div class="list">
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
-            <div class="video hoverable-item"></div>
+        <div class="main__recommend">
+          <h1>Đề xuất</h1>
+          <div class="main__list">
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
+            <div class="main__recommend-video"></div>
           </div>
         </div>
-        <div class="category">
-          <h2>Danh mục</h2>
-          <div class="list">
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
-            <div class="category-item hoverable-item"></div>
+        <div class="main__category">
+          <h1>Danh mục</h1>
+          <div class="main__list">
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
+            <div class="main__category-item"></div>
           </div>
         </div>
       </div>
     </main>
-    <script src="./js/video.js"></script>
   </body>
 </html>
