@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stream Zone</title>
+    <title>Watch</title>
 
-    <link rel="stylesheet" href="../asset/css/base.css">
-    <link rel="stylesheet" href="../asset/css/watching.css">
-</head>
-<body>
-  <nav class="header">
-    <div class="header__logo"></div>
-    <div class="header__events-and-tournaments">
-      <a href="#">Events</a>
-      <a href="#">Tournaments</a>
-    </div>
-    <div class="header__search">
-      <input type="text" placeholder="Search" class="header__search-input" />
-      <button class="header__search-button style-btn-normal style-btn-hover">
-        <img src="../images/search-solid.svg" alt="search" width="20px" />
-      </button>
-    </div>
-    <div class="header__user">
-      <button class="header__user-login-button style-btn-normal">Log in</button>
-      <button class="header__user-signup-button style-btn-normal style-btn-hover">Sign up</button>
-    </div>
-  </nav>
+    <link rel="stylesheet" href="../asset/css/base.css" />
+    <link rel="stylesheet" href="../asset/css/watching.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="header__logo"></div>
+      <div class="header__events-and-tournaments">
+        <a href="#">Events</a>
+        <a href="#">Tournaments</a>
+      </div>
+      <div class="header__search">
+        <input type="text" placeholder="Search" class="header__search-input" />
+        <button class="header__search-button style-btn-normal style-btn-hover">
+          <img src="../images/search-solid.svg" alt="search" width="20px" />
+        </button>
+      </div>
+      <div class="header__user">
+        <button class="header__user-login-button style-btn-normal">
+          Log in
+        </button>
+        <button
+          class="header__user-signup-button style-btn-normal style-btn-hover"
+        >
+          Sign up
+        </button>
+      </div>
+    </nav>
     <main>
       <div class="side-nav">
         <div class="side-nav__channel-list">
@@ -39,7 +45,8 @@
         </div>
       </div>
       <div class="main">
-        <div class="main__interact-zone">
+        <div class="main__interact">
+          <div class="main__title"></div>
           <div class="main__live-player">
             <div class="video-container">
               <iframe
@@ -53,10 +60,27 @@
               ></iframe>
             </div>
           </div>
-          <div class="main__chat-channel">
-
+          <div class="main__donate"></div>
+        </div>
+        <div class="main__chat-channel">
+          <div class="chat-container">
+            <div class="chat-header">
+              <img src="../images/arrow-right-solid.svg" alt="" width="20px">
+              <h3>Kênh chat</h3>
+              <img src="../images/cog-solid.svg" alt="" width="20px">
+            </div>
+            <div class="top-donate"></div>
+            <div class="chat-content"></div>
+            <div class="chat-footer">
+              <textarea class="chat-footer__input-message" row="3"></textarea>
+              <div class="chat-footer__operation">
+                <img src="../images/smile-beam-solid.svg" alt="" width="20px">
+                <button class="style-btn-normal style-btn-hover chat-footer__send-btn">Send</button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </main>
   </body>
 </html>

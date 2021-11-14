@@ -90,7 +90,11 @@
   height: 250px;
   min-width: 175px;
   background-color: yellow;
-  margin: 15px;
+  margin: 30px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.main__category-item:hover {
+  animation: jumpup 0.2s 1 ease;
 }

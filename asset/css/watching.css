@@ -3,20 +3,29 @@
   top: 50px;
   left: 75px; 
   width: calc(100% - 75px);
-}
-
-.main__interact-zone {
   display: flex;
-  height: calc(80vh);
 }
 
+.main__interact {
+  width: 75%;
+  height: calc(100vh - 50px);
+}
+
+.main__title {
+  height: 8vh;
+  background-color: red;
+}
 
 .main__live-player {
-  width: 72%;
-  background-color: black;
+  height: 75vh;
+}
+
+.main__donate {
+  height: calc(17vh - 50px);
+  background-color: blue;
 }
 
 .main__chat-channel {
-  width: 28%;
-  background-color: rgb(3, 172, 3);
+  width: 25%;
+  height: calc(100vh - 50px);
 }
