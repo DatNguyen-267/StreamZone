@@ -179,6 +179,7 @@ a {
   height: 60%;
   padding: 5px;
   border: 0;
+  cursor: pointer;
 }
 
 .style-btn-hover {
@@ -189,29 +190,12 @@ a {
   background-color: var(--hover-color);
 }
 
-/* style scrollbar */
-::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
-  background-color: white;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(151, 149, 149);
-  border-radius: 10px;
-  margin: 0 40px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(204, 202, 202);
-  border-radius: 10px;
-}
-
 /* chat channel */
 
 .chat-container {
   width: 100%;
   height: 100%;
+  box-shadow: -1px 0 3px rgb(0 0 0 / 20%);
 }
 
 .chat-header {
