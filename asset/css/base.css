@@ -6,6 +6,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --sub-text-color: #606060;
   --border-color: #dbdbdbdb;
   --background-color: #f9f9f9;
 }
@@ -22,11 +23,11 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
+/* 
 .grid {
   width: 1280px;
   max-width: 100%;
-  margin: 0 auto; /* căn giữa khối này và khối khác */
+  margin: 0 auto; 
 }
 
 .gird__full-width {
@@ -39,7 +40,9 @@ html {
 }
 .row__size {
   padding: 0 36px;
-}
+} */
+
+
 /* ANIMATION */
 @keyframes fadein {
   from {

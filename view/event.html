@@ -8,31 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../asset/css/base.css">
     <link rel="stylesheet" href="../asset/css/event.css">
-    <link rel="stylesheet" href="../asset/css/header.css">
+    <link rel="stylesheet" href="../asset/css/grid.css">
     <title>Events</title>
 </head>
 <body>
     
     <div class="app">
-        <nav class="header">
+        <!-- <nav class="header">
             <div class="header__logo"></div>
             <div class="header__events-and-tournaments">
-              <a href="#">Events</a>
-              <a href="#">Tournaments</a>
+                <a href="#">Events</a>
+                <a href="#">Tournaments</a>
             </div>
             <div class="header__search">
-              <input type="text" placeholder="Search" class="header__search-input" />
-              <button class="header__search-button style-btn-normal style-btn-hover">
+            <input type="text" placeholder="Search" class="header__search-input" />
+            <button class="header__search-button style-btn-normal style-btn-hover">
                 <img src="../images/search-solid.svg" alt="search" width="20px" />
-              </button>
+            </button>
             </div>
             <div class="header__user">
-              <button class="header__user-login-button style-btn-normal">Log in</button>
-              <button class="header__user-signup-button style-btn-normal style-btn-hover">Sign up</button>
+                <button class="header__user-login-button style-btn-normal">Log in</button>
+                <button class="header__user-signup-button style-btn-normal style-btn-hover">Sign up</button>
             </div>
-          </nav>
-        <div class="grid">
-            <div class="event-tab">
+        </nav> -->
+        <div class="grid wide">
+            <div class="event-tab row">
                     <h3 class="event__title">Sự kiện nổi bật</h3>
                     <div class="event__content">
                         <img src="../asset/img/event_major.png" 
@@ -57,34 +57,54 @@
                 </div>
                 
             </div>
-            <div class="event-tab">
+            <div class="row">
                 <h3 class="event__title">Đang diễn ra</h3>
                 <div class="event-list">
-                    <div class="event-item">
-                        <img src="../asset/img/event_naraka.png" alt="" class="event-item__img">
-                        <p class="event-item__name">Naraka</p>
-                        <p class="event-item__date">18:00 31/10/2021</p>
-                        <button class="event-item__btn">Tham gia</button>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="event-item ">
+                                <img src="../asset/img/event_naraka.png" alt="" class="event-item__img">
+                                <p class="event-item__name">Naraka</p>
+                                <p class="event-item__date">18:00 31/10/2021</p>
+                                <button class="event-item__btn">Tham gia</button>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="event-item ">
+                                <img src="../asset/img/event_lienquan.png" alt="" class="event-item__img">
+                                <p class="event-item__name">Lien Quan Mobile</p>
+                                <p class="event-item__date">7:00 3/11/2021</p>
+                                <button class="event-item__btn">Tham gia</button>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="event-item ">
+                                <img src="../asset/img/event_major.png" alt="" class="event-item__img">
+                                <p class="event-item__name">Csgo Major</p>
+                                <p class="event-item__date">21:00 01/11/2021</p>
+                                <button class="event-item__btn">Tham gia</button>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="event-item ">
+                                <img src="../asset/img/event_major.png" alt="" class="event-item__img">
+                                <p class="event-item__name">Csgo Major</p>
+                                <p class="event-item__date">21:00 01/11/2021</p>
+                                <button class="event-item__btn">Tham gia</button>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="event-item ">
+                                <img src="../asset/img/event_major.png" alt="" class="event-item__img">
+                                <p class="event-item__name">Csgo Major</p>
+                                <p class="event-item__date">21:00 01/11/2021</p>
+                                <button class="event-item__btn">Tham gia</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="event-item">
-                        <img src="../asset/img/event_lienquan.png" alt="" class="event-item__img">
-                        <p class="event-item__name">Lien Quan Mobile</p>
-                        <p class="event-item__date">7:00 3/11/2021</p>
-                        <button class="event-item__btn">Tham gia</button>
-                    </div>
-                    <div class="event-item">
-                        <img src="../asset/img/event_major.png" alt="" class="event-item__img">
-                        <p class="event-item__name">Csgo Major</p>
-                        <p class="event-item__date">21:00 01/11/2021</p>
-                        <button class="event-item__btn">Tham gia</button>
-                    </div>
-                </div>
             </div>
         </div>
         
     </div> 
-   
-   <script src="./app.js">    
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

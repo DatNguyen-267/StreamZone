@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="../../asset/css/base.css">
     <link rel="stylesheet" href="../../asset/css/grid.css">
     <link rel="stylesheet" href="../../asset/css/allstream.css">
-    <link rel="stylesheet" href="../../asset/css/header.css">
+    
     
 </head>
 <body>
-    <div class="app">
-        <div class="title row__size">
+    <div class="app grid wide">
+        <div class="title">
             <h3>Đang Live</h3>
         </div>
-        <div class="category row__size">
+        <div class="category">
             <a href="./allstream.html">
                 <button class="category-btn category-btn--active">Thịnh hành</button>
             </a>
@@ -30,7 +30,7 @@
                 <button class="category-btn ">Top Follow</button>
             </a>
         </div>
-        <div class="list-stream row__size">
+        <div class="list-stream ">
             <div class="row">
                 <div class="col l-3 m-4 c-6">
                     <div class="list-stream-item">
@@ -144,7 +144,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col l-3 m-4 c-6">
+                <!-- <div class="col l-3 m-4 c-6">
                     <div class="list-stream-item">
                         <div class="list-stream-item__header">
                             <img class="list-stream-item__img" src="http://img.youtube.com/vi/977pO-e1lfQ/maxresdefault.jpg"></img>
@@ -159,13 +159,12 @@
                                 <div class="list-stream-item__name">Ba Rọi Béo</div>
                                 <div class="list-stream-item__topic">
                                     <div class="list-stream-item__topic-item">LOL</div>
-                                   
                                 </div>
         
                             </div>
                         </div>
                     </div>  
-                </div>
+                </div> -->
                 <div class="col l-3 m-4 c-6">
                     <div class="list-stream-item">
                         <div class="list-stream-item__header">
@@ -245,11 +244,11 @@
         // main 
         const app = {
             lives: [
-              {
-                  title:"",
-                  name:"",
+            {
+                title:"",
+                name:"",
                     
-              }
+            }
             ],
             handleEvent: function() {
                 console.log(categorybtns)
