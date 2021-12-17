@@ -1,7 +1,9 @@
-
+body {
+    
+}
 .app {
     background-color: var(--white-color);
-
+    background-color: black;
 }
 .event-tab {   
     position: relative;
@@ -14,10 +16,10 @@
     height: 570px;
 }
 .event__title {
-    color: var(--text-color);
+    color: var(--white-color);
     font-size: 30px;
     font-weight: 700;
-
+    margin: 12px 0;
 }
 .event__content-img {
     position: relative;
@@ -71,7 +73,7 @@
    
 }
 .ongoing-event__title {
-    color: var(--text-color);
+    color: var(--white-color);
     font-size: 30px;
     font-weight: 700;
     
@@ -97,6 +99,7 @@
     align-items: center;
     position: relative;
     margin-bottom: 36px;
+    background-color: var(--sub-primary-color);
 }
 .event-item__img {
     
@@ -105,14 +108,14 @@
     cursor: pointer;
 }
 .event-item__name {
-    color: var(--text-color);
+    color: var(--white-color);
     font-size: 28px;
     font-weight: 700;
     line-height: 30px;
     margin: 15px 0 0 0;
 }
 .event-item__date {
-    color: var(--text-color);
+    color: var(--white-color);
     font-size: 18px;
     font-weight: 600;
     margin: 10px 0 0 0;
@@ -122,7 +125,7 @@
     color: var(--white-color);
     font-size: 22px;
     font-weight: 700;
-    height: 50px;
+    height: 45px;
     width: 200px;
     background-color: var(--primary-color);
     border-radius: 3px;
@@ -132,4 +135,5 @@
     position: absolute;
     margin-bottom: 30px;
     cursor: pointer;
+    outline: none;
 }

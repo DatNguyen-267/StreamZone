@@ -2,13 +2,14 @@
   --primary-color: rgb(26, 148, 255);
   --primary-color-rgba: rgba(26, 148, 255, 0.5);
   --secondary-color: rgb(22, 124, 212);
+  --sub-primary-color: #1e1e1e;
   --hover-color: rgb(19, 110, 190);
-  --white-color: #fff;
-  --black-color: #000;
-  --text-color: #333;
-  --sub-text-color: #606060;
-  --border-color: #dbdbdbdb;
-  --background-color: #f9f9f9;
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --text-color: rgb(51, 51, 51);
+  --sub-text-color: rgba(18, 18, 18, 0.6);
+  --border-color: rgba(219, 219, 219, 0.859);
+  --background-color: rgb(250, 250, 250);
 }
 
 * {
