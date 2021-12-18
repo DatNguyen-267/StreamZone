@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+}
+.title {
+    font-size: 30px;
+    padding: 0;
+    margin: 16px 0;
+    color: white;
+}
+.category-group {
+    margin: 24px 0;
+    display: flex;
+
+}
+.category-group__btn {
+    width: 150px;
+    height: 35px;
+    /* border: 1px solid rgb(201, 197, 197); */
+    /* border:1px solid #999; */
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    background-color: #fff;
+    cursor: pointer;
+}
+.category-group__btn:hover {
+    background-color: rgb(209, 209, 209);
+}
+.category-group__btn--active{
+    background-color: var(--primary-color); 
+    color: var(--white-color);
+    box-shadow: 0 0px 0px 0.1rem  rgba(26, 148, 255, 0.8);
+
+}
+.category-group__btn--active:hover {
+    background-color: var(--primary-color); 
+}
+.category {
+
+}
+.category-group__filter {
+    background-color: var(--sub-primary-color);
+}
+.category-group__filter-title {
+    color: white;
+}
+.category-group__filter-selection {
+
+}
+.category-group__filter-item {
+
+} 
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+    border-radius: 2px;
+    
+    cursor: pointer;
+}
+.category-item:hover .category-item__img {
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: 0px 0px 0px 0.2rem rgb(26, 148, 255);
+}
+.category-item__img {
+    width: 100%;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+}
+.category-item__name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    color: white;
+}
+.category-item__view {
+    font-size: 12px;
+    margin-top: 4px;
+    color: white;
+
+}
+
+/* FILTER */
+.category-group__filter {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.category-group__filter-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.category-group__filter-selection {
+    width: auto;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    padding: 6px 4px;
+    color: var(--white-color);
+    font-weight: 600;
+    outline: none;
+}
+.category-group__filter-item {
+    background-color: var(--white-color);
+}
