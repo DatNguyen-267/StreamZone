@@ -59,7 +59,7 @@ body {
     align-items: center;
     margin-bottom: 36px;
     border-radius: 2px;
-    overflow: hidden;
+    
     cursor: pointer;
 }
 .category-item:hover .category-item__img {

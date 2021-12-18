@@ -7,7 +7,8 @@
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(0, 0, 0);
   --text-color: rgb(51, 51, 51);
-  --sub-text-color: rgba(18, 18, 18, 0.6);
+  --sub-text-color: #12121299;
+  --sub-white-text-color: #ffffff99;
   --border-color: rgba(219, 219, 219, 0.859);
   --background-color: rgb(250, 250, 250);
 }
