@@ -1,44 +1,45 @@
-/* ANIMATION */
 
 body {
-    background-color:  var(--theme-black);
+    background-color: var(--theme-black);
 }
-.title {
-    font-size: 2.4rem;
-    color: var(--white-color);
-    margin: 16px 0;
+
+/* HEADER */
+.item__header {
+    height: 350px;
 }
-.category {
-    margin: 16px 0;
+.item__header-img {
+    background-image: url(https://tophinhanhdep.com/wp-content/uploads/2021/10/Valorant-4K-Wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
-.category a {
-    text-decoration: none;
-}
-.category-btn{
-    width: 130px;
-    height: 35px;
-    /* border: 1px solid rgb(201, 197, 197); */
-    border:none;
-    border-radius: 5px;
-    margin: 0 8px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--text-color);
-    background-color: var(--white-color);
-    /* box-shadow: 0 2px 6px rgb(207, 204, 204); */
-}
-.category-btn:first-child {
-    margin: 0 8px 0 0;
-}
-.category-btn--active{
-    background-color: var(--primary-color); 
-    color: var(--white-color);
-}
-.list-stream {
-    padding-top: 8px;
-    
+
+/* NAVBAR */
+.live {
 
 }
+.live__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.live__title {
+    color: var(--text-color-white);
+    font-size: 30px;
+    margin: 24px 0;
+    margin-right: 36px;
+}
+.live__navbar {
+
+}
+.live__list {
+     margin-top: 0px;
+}
+
+
+/* VIDEO LIVE STEAM */
 .stream-item {
     height: 290px;
     margin-bottom: 24px;

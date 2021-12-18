@@ -3,7 +3,7 @@ body {
 }
 .app {
     background-color: var(--white-color);
-    background-color: black;
+    background-color: var(--theme-black);
 }
 .event-tab {   
     position: relative;
