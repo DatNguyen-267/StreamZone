@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    /* user-select: none; */
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+  }
+  html,body{
+    height: 100%;
+  }
+body{
+  display: grid;
+  place-items: center;
+  background: #dde1e7;
+  text-align: center;
+}
+.content{
+  width: 380px;
+  padding: 40px 30px;
+  background:#fff;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #03030373,
+               2px 2px 5px rgba(40, 43, 51, 0.288);
+}
+.header__title{
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color:var(--text-color);
+}
+.notify-pin,
+.notify-pass{
+    text-align: center;
+    margin: 20px 0 15px 5px;
+}
+.notify-pin__text,
+.notify-pass__text{
+    font-size: 16px;
+    color:var(--primary-color);
+    text-decoration: none;
+}
+.notify-pin:hover .notify-pin__text{
+    text-decoration: underline;
+}
+.notify-pass:hover .notify-pass__text{
+    text-decoration: underline;
+}
+
+.input-acc__pin,
+.input-acc__pass,
+.input-acc__pre-pass{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.input-acc__pin:nth-child(2)
+{
+  margin-top: 20px;
+}
+.input-acc__pass:nth-child(4){
+  margin-top: 20px;
+}
+.input-acc__pre-pass:nth-child(5){
+    margin-top: 20px;
+}
+
+.input-acc__pin-input,
+.input-acc__pre-pass-input,
+.input-acc__pass-input{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: rgb(250, 250, 250);
+  color: black;
+  border-radius: 25px;
+  box-shadow: inset 1px 1px 2px #BABECC,
+              inset -1px -1px 2px #cfcfcf73;
+}
+.input-acc__pin-input{
+    padding-left: 0;
+    text-align: center;
+}
+.input-acc__pin-input:focus,
+.input-acc__pre-pass-input:focus,
+.input-acc__pass-input:focus{
+  box-shadow: inset 1px 2px 3px #BABECC,
+              inset -1px -2px 3px #cfcfcf73;
+}
+
+.input-acc__pin-icon,
+.input-acc__pre-pass-icon,
+.input-acc__pass-icon{
+  position: absolute;
+  color: var(--text-color);
+  width: 50px;
+  line-height: 50px;
+}
+
+.input-acc__pin-icon span,
+.input-acc__pre-pass-icon span,
+.input-acc__pass-icon span{
+  transform: scale(1.3);
+}
+
+.input-acc__pin-lb,
+.input-acc__pre-pass-lb,
+.input-acc__pass-lb{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  font-size: 18px;
+  pointer-events: none;
+  color:var(--text-color);
+}
+
+.input-acc__pin-lb{
+    left: 110px;
+}
+.input-acc__pin-input:focus ~label,
+.input-acc__pin-input:valid ~label,
+.input-acc__pre-pass-input:valid ~label,
+.input-acc__pass-input:valid ~ label{
+  opacity: 0;
+}
+
+.confirm__button{
+  margin: 30px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight:900;
+  font-weight: bold;
+  background:var(--primary-color);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color:#fff;
+  box-shadow: 1px 1px 4px #3c3c3d,
+             -2px -2px 6px #1a161673;
+  transition: all 0.3s;
+}
+.confirm__button:hover{
+  background-color:rgb(19, 110, 190);
+  
+}
+
+
