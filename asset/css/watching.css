@@ -6,14 +6,22 @@
   display: flex;
 }
 
-.main__interact {
+.interact {
   width: 75%;
   height: calc(100vh - 50px);
 }
 
-.main__title {
+.interact__title {
   height: 8vh;
-  background-color: red;
+  display: flex;
+}
+
+.interact__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 .main__live-player {

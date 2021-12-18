@@ -11,7 +11,9 @@
   </head>
   <body>
     <nav class="header">
-      <div class="header__logo"></div>
+      <a href="index.html">
+        <div class="header__logo"></div>
+      </a>
       <div class="header__events-and-tournaments">
         <a href="#">Events</a>
         <a href="#">Tournaments</a>
@@ -36,17 +38,41 @@
     <main>
       <div class="side-nav">
         <div class="side-nav__channel-list">
-          <div class="side-nav__channel-item"></div>
-          <div class="side-nav__channel-item"></div>
-          <div class="side-nav__channel-item"></div>
-          <div class="side-nav__channel-item"></div>
-          <div class="side-nav__channel-item"></div>
-          <div class="side-nav__channel-item"></div>
+          <a href="watching.html">
+            <div class="side-nav__channel-item"></div>
+          </a>
+          <a href="watching.html">
+            <div class="side-nav__channel-item"></div>
+          </a>
+          <a href="watching.html">
+            <div class="side-nav__channel-item"></div>
+          </a>
+          <a href="watching.html">
+            <div class="side-nav__channel-item"></div>
+          </a>
+          <a href="watching.html">
+            <div class="side-nav__channel-item"></div>
+          </a>
         </div>
       </div>
       <div class="main">
-        <div class="main__interact">
-          <div class="main__title"></div>
+        <div class="interact">
+          <div class="interact__title">
+            <div class="interact__avatar">
+              <a href=""></a>
+            </div>
+            <div class="title-container">
+              <div class="title-container__above">
+                <span>Tiêu đề video</span>
+                <span><img src="../images/heart-solid.svg" alt="" width="15px"></span>
+                
+              </div>
+              <div class="title-container__below">
+                <span>Tên streamer</span>
+                <span>Follower</span>
+              </div>
+            </div> 
+          </div>
           <div class="main__live-player">
             <div class="video-container">
               <iframe
@@ -65,17 +91,21 @@
         <div class="main__chat-channel">
           <div class="chat-container">
             <div class="chat-header">
-              <img src="../images/arrow-right-solid.svg" alt="" width="20px">
+              <img src="../images/arrow-right-solid.svg" alt="" width="20px" />
               <h3>Kênh chat</h3>
-              <img src="../images/cog-solid.svg" alt="" width="20px">
+              <img src="../images/cog-solid.svg" alt="" width="20px" />
             </div>
             <div class="top-donate"></div>
             <div class="chat-content"></div>
             <div class="chat-footer">
               <textarea class="chat-footer__input-message" row="3"></textarea>
               <div class="chat-footer__operation">
-                <img src="../images/smile-beam-solid.svg" alt="" width="20px">
-                <button class="style-btn-normal style-btn-hover chat-footer__send-btn">Send</button>
+                <img src="../images/smile-beam-solid.svg" alt="" width="20px" />
+                <button
+                  class="style-btn-normal style-btn-hover chat-footer__send-btn"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>
