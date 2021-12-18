@@ -1,7 +1,6 @@
 
 .interact-zone {
-  display: flex;
-  
+  display: flex;  
   height: calc(80vh);
 }
 
