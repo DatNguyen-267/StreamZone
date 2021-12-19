@@ -1,0 +1,116 @@
+body{
+    background-color: var(--black-color);
+}
+main{
+    padding-top: 70px;
+}
+/* top-nav */
+.top-nav{
+    margin-left: 20%;
+    width: 60%;
+    height: 50px;
+    background: #232323;
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.top-nav ul{
+    float: left;
+    display: flex;
+}
+.top-nav ul li{
+    list-style: none;
+}
+.top-nav ul li a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    color: #fff; 
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.7s
+}
+.top-nav ul li:nth-child(3){
+    border-bottom: 3px solid #fff;
+}
+/* Main-content */
+
+.main-content{  
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+    width: 60%;
+    
+}
+/* Title bar của content game, streamer, live */
+.title-bar{
+    display: flex;
+}
+.title-bar__title{
+    font-size: 22px;
+    font-weight: 700;
+    flex: 1;
+    color: var(--white-color);
+}
+.title-bar__active{
+    float: right;
+    font-size: 16px;
+    width: 95px;
+    color: var(--white-color);
+}
+.title-bar__active i{
+    transform: scale(1.3);
+}
+
+/* Streatmer */
+.main-content__streamer{
+    margin-top: 50px;
+}
+.list-streamer{
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+}
+.list-streamer-iteam__img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.list-streamer-iteam__name{
+    font-size: 1.6rem;
+    line-height: 27px;
+    /* font-weight: 700; */
+    overflow: hidden;
+    margin-bottom: 4px;
+    text-align: center;
+    color: var(--white-color);
+}
+.list-streamer-iteam__follow{
+    font-size: 1.2rem;
+    line-height: 12px;
+    color: var(--white-color);
+    /* font-weight: 700; */
+    overflow: hidden;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.list-streamer-iteam{
+    width: 300px;
+    padding: 5px 5px 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 0.2s;
+}
+.list-streamer-iteam:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: 700;
+}
