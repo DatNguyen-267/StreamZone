@@ -84,6 +84,17 @@ a {
   text-decoration: none;
 }
 
+/* customize */
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0E0E10;
+  border-radius: 5px;
+}
+
+
 /* header */
 .header {
   position: fixed;
