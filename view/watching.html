@@ -15,24 +15,28 @@
         <div class="header__logo"></div>
       </a>
       <div class="header__events-and-tournaments">
-        <a href="#">Events</a>
-        <a href="#">Tournaments</a>
+        <a href="./event.html">Sự kiện</a>
+        <a href="#">Tất cả</a>
       </div>
       <div class="header__search">
         <input type="text" placeholder="Search" class="header__search-input" />
         <button class="header__search-button style-btn-normal style-btn-hover">
-          <img src="../images/search-solid.svg" alt="search" width="20px" />
+          <a href="search-total.html">
+            <img src="../images/search-solid.svg" alt="search" width="20px" />
+          </a>
         </button>
       </div>
       <div class="header__user">
-        <button class="header__user-login-button style-btn-normal">
-          Log in
-        </button>
-        <button
-          class="header__user-signup-button style-btn-normal style-btn-hover"
-        >
-          Sign up
-        </button>
+        <a href="./login.html">
+          <button class="header__user-login-button style-btn-normal">
+            Log in
+          </button>
+        </a>
+        <a href="./sign-up.html">
+          <button class="header__user-signup-button style-btn-normal style-btn-hover">
+            Sign up
+          </button>
+        </a>
       </div>
     </nav>
     <main>
@@ -64,16 +68,24 @@
             <div class="title-container">
               <div class="title-container__above">
                 <span>Tiêu đề video</span>
+                <div class="action">
+                  <button class="title__button title__button-heart">
+                    <img src="../images/heart-solid.svg" alt="">
+                  </button>
+                  <button class="title__button title__button-bell">
+                    <img src="../images/bell-regular.svg" alt="">
+                  </button>
+                </div>
               </div>
               <div class="title-container__below">
                 <span>Tên streamer</span>
                 <div class="follower">
                   <span>67,546</span>
-                  <span><img src="../images/users-solid.svg" width="15px" alt=""></span>
+                  <span><img src="../images/users-solid.svg" width="15px"></span>
                 </div>
                 <div class="viewer">
                   <span>12,345</span>
-                  <span><img src="../images/eye-solid.svg" width="15px" alt=""></span>
+                  <span><img src="../images/eye-solid.svg" width="15px"></span>
                 </div>
               </div>
             </div> 
@@ -95,11 +107,7 @@
         </div>
         <div class="main__chat-channel">
           <div class="chat-container">
-            <div class="chat-header">
-              <img src="../images/arrow-right-solid.svg" alt="" width="20px" />
-              <h3>Kênh chat</h3>
-              <img src="../images/cog-solid.svg" alt="" width="20px" />
-            </div>
+            
             <div class="top-donate"></div>
             <div class="chat-content"></div>
             <div class="chat-footer">

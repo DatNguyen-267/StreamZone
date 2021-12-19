@@ -66,6 +66,11 @@ body {
   padding-top: 10px;
 }
 
+.action {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
 .title-container__below {
   width: 100%;
   font-size: 150%;
@@ -73,4 +78,22 @@ body {
   display: flex;
   padding-top: 5px;  
   gap: 30px;
+}
+
+.title__button {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: inherit;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.title__button-heart:hover {
+  background-color: rgb(224, 82, 82);
+}
+
+.title__button-bell:hover {
+  background-color: rgb(190, 190, 34);
 }

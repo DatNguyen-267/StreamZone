@@ -39,6 +39,15 @@ body {
   overflow: hidden;
 }
 
+.main__live-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.main__live-list::-webkit-scrollbar-thumb {
+  background-color: #0E0E10;
+  border-radius: 5px;
+}
+
 .main__live-list:hover {
   overflow-y: scroll;
 }
