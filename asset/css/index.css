@@ -1,3 +1,9 @@
+body {
+  background-color: var(--theme-black);
+}
+h1 {
+  color: var(--text-color-white);
+}
 .main {
   position: absolute;
   top: 50px;
@@ -28,9 +34,9 @@
   overflow: hidden;
 }
 
-.main__live-list:hover {
+/* .main__live-list:hover {
   overflow-y: scroll;
-}
+} */
 
 .main__live-item {
   height: 20%;
@@ -97,4 +103,43 @@
 
 .main__category-item:hover {
   animation: jumpup 0.2s 1 ease;
+}
+
+/*  ĐẠT CHỈNH SỬA */
+.item__header-title {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+.channel-list {
+  margin-top: 36px;
+}
+.channel-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+.channel-avatar{
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+.channel-name{
+  color: var(--text-color-white);
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+
+}
+.channel-sub{
+  color: var(--sub-text-color-white);
+  font-size: 14px;
+}
+/* TOP STREAM */
+.topstream {
+  margin-top: 36px;
 }
