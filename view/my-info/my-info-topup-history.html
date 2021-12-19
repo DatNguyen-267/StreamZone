@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="header">
-      <a href="index.html">
+      <a href="../index.html">
         <div class="header__logo"></div>
       </a>
       <div class="header__events-and-tournaments">
@@ -25,39 +25,97 @@
         </button>
       </div>
       <div class="header__user">
-        <button class="header__user-login-button style-btn-normal">
-          Log in
-        </button>
-        <button
-          class="header__user-signup-button style-btn-normal style-btn-hover"
-        >
-          Sign up
-        </button>
+        <a href="../login.html">
+          <button class="header__user-login-button style-btn-normal">
+            Log in
+          </button>
+        </a>
+        <a href="../sign-up.html">
+          <button class="header__user-signup-button style-btn-normal style-btn-hover">
+            Sign up
+          </button>
+        </a>
       </div>
     </nav>
     <main class="main">
       <div class="menu">
         <ul>
           <li class="menu__item">
-            <img src="../../images/user-solid.svg" class="menu__icon" />
-            <span class="menu__title">Thông tin cá nhân</span>
+            <a href="../my-info/my-info-information.html">
+              <img src="../../images/user-solid.svg" class="menu__icon" />
+              <span class="menu__title">Thông tin cá nhân</span>
+            </a>
           </li>
           <li class="menu__item">
-            <img src="../../images/heart-solid.svg" class="menu__icon" />
-            <span class="menu__title">Kênh theo dõi</span>
+            <a href="../my-info/my-info-follow.html">
+              <img src="../../images/heart-solid.svg" class="menu__icon" />
+              <span class="menu__title">Kênh theo dõi</span>
+            </a>
           </li>
           <li class="menu__item menu__item--selected">
-            <img src="../../images/coins-solid.svg" class="menu__icon" />
-            <span class="menu__title">Lịch sử nạp</span>
+            <a href="../my-info/my-info-topup-history.html">
+              <img src="../../images/coins-solid.svg" class="menu__icon" />
+              <span class="menu__title">Lịch sử nạp</span>
+            </a>
           </li>
           <li class="menu__item">
-            <img src="../../images/broadcast-tower-solid.svg" class="menu__icon" />
-            <span class="menu__title">Lịch sử stream</span>
+            <a href="../my-info/my-info-stream-history.html">
+              <img
+                src="../../images/broadcast-tower-solid.svg"
+                class="menu__icon"
+              />
+              <span class="menu__title">Lịch sử stream</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="info-panel">
         <div class="personal-information">
+          <div class="top-up-history">
+            <div class="top-up-balance">
+              <p class="top-up-balance__title">Số dư tài khoản</p>
+              <span class="top-up-balance__amount">1232</span>
+              <img src="../../images/coins-solid.svg" class="top-up-balance__icon">
+            </div>
+            <div class="history">
+              <table class="top-up-data-table">
+                <thead>
+                  <tr>
+                    <th>Nội dung</th>
+                    <th>Số tiền</th>
+                    <th>Thời gian</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Thắng vòng quay may mắn</td>
+                    <td>+50</td>
+                    <td>20:12 14/12/2021</td>
+                  </tr>
+                  <tr>
+                    <td>Thắng vòng quay may mắn</td>
+                    <td>+50</td>
+                    <td>20:12 14/12/2021</td>
+                  </tr>
+                  <tr>
+                    <td>Thắng vòng quay may mắn</td>
+                    <td>+50</td>
+                    <td>20:12 14/12/2021</td>
+                  </tr>
+                  <tr>
+                    <td>Thắng vòng quay may mắn</td>
+                    <td>+50</td>
+                    <td>20:12 14/12/2021</td>
+                  </tr>
+                  <tr>
+                    <td>Thắng vòng quay may mắn</td>
+                    <td>+50</td>
+                    <td>20:12 14/12/2021</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </main>

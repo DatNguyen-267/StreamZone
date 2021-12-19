@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
 .main {
   position: absolute;
   top: 50px;
@@ -12,8 +23,10 @@
 }
 
 .interact__title {
+  margin-left: 10px;
   height: 8vh;
   display: flex;
+  align-items: center;
 }
 
 .interact__avatar {
@@ -29,11 +42,35 @@
 }
 
 .main__donate {
-  height: calc(17vh - 50px);
-  background-color: blue;
+  height: calc(15vh - 50px);
 }
 
 .main__chat-channel {
   width: 25%;
   height: calc(100vh - 50px);
+}
+
+.title-container {
+  margin-left: 20px;
+  height: 10vh;
+  width: 100%;
+}
+
+.title-container__above {
+  width: 100%;
+  font-size: 250%;
+  font-weight: bold;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.title-container__below {
+  width: 100%;
+  font-size: 150%;
+  height: 5vh;
+  display: flex;
+  padding-top: 5px;  
+  gap: 30px;
 }
