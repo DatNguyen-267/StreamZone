@@ -17,22 +17,23 @@ a:visited {
 body{
   display: grid;
   place-items: center;
-  background: #dde1e7;
+  background: var(--black-color);
   text-align: center;
 }
 .content{
-  width: 330px;
+  width: 400px;
+  height: 630px;
   padding: 40px 30px;
-  background:#fff;
+  background: var(--sub-primary-color);
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #03030373,
-               2px 2px 5px rgba(40, 43, 51, 0.288);
+  /* box-shadow: -3px -3px 7px #8b878773,
+               2px 2px 5px rgba(56, 57, 58, 0.288); */
 }
 .header__title{
   font-size: 33px;
   font-weight: 600;
-  margin-bottom: 35px;
-  color:var(--text-color);
+  margin-bottom: 80px;
+  color:var(--white-color);
 }
 .input-acc__name,
 .input-acc__pass{
@@ -42,10 +43,10 @@ body{
   position: relative;
 }
 .input-acc__name:nth-child(2){
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .input-acc__pass:nth-child(2){
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .input-acc__name-input,
 .input-acc__pass-input{
@@ -94,7 +95,7 @@ body{
 
 .forgot-pass{
   text-align: left;
-  margin: 20px 0 15px 5px;
+  margin: 40px 0 15px 5px;
 }
 .forgot-pass__text{
   font-size: 16px;
@@ -105,7 +106,7 @@ body{
   text-decoration: underline;
 }
 .login__button{
-  margin: 15px 0;
+  margin: 20px 0;
   width: 100%;
   height: 50px;
   font-size: 18px;
@@ -131,7 +132,7 @@ body{
   font-size: 16px;
 }
 .login-other__text{
-  color: var(--text-color);
+  color: var(--white-color);
 }
 .login-other__group-icon{
   margin-top: 20px;
@@ -146,13 +147,13 @@ body{
   margin-left: 20px;
 }
 .login-other__icon--face{
-  color:#0051f3;
+  color:#2970ff;
 }
 .login-other__icon--twitter{
-  color: #027add;
+  color: #2896f0;
 }
 .login-other__icon--google{
-  color: #ff3535;
+  color: #f34040;
 }
 
 .login-other li i{
@@ -164,7 +165,7 @@ body{
 }
 .sign-up{
   margin: 10px 0;
-  color:var(--text-color);
+  color:var(--white-color);
   font-size: 16px;
 }
 .sign-up a{

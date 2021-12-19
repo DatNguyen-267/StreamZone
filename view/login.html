@@ -22,7 +22,7 @@
          </div>
       </header>
       <div class="container">
-         <form>
+         <form method="get" action="./index.html">
             <div class="input-acc__name">
                <input class="input-acc__name-input" type="text" required>
                <div class="input-acc__name-icon">
@@ -38,33 +38,19 @@
                <label class="input-acc__pass-lb">Mật khẩu</label>
             </div>
             <div class="forgot-pass">
-               <a href="#" class="forgot-pass__text"> Quên mật khẩu?</a>
+               <a href="./foget-pass.html" class="forgot-pass__text"> Quên mật khẩu?</a>
             </div>
             <div class="login">
-               <a href="./index.html">
-                  <button class="login__button">Đăng nhập</button>
-               </a>
+               <button class="login__button" type="submit">Đăng nhập</button>
             </div>
             <div class="login-other">
                <p class="login-other__text">
                   Hoặc đăng nhập bằng
                </p> 
                <ul class="login-other__group-icon">
-                  <li class="login-other__icon--face">
-                     <a href="./index.html">
-                        <i class="fab fa-facebook"></i>
-                     </a>
-                  </li>
-                  <li class="login-other__icon--twitter">
-                     <a href="./index.html">
-                        <i class="fab fa-twitter-square"></i>
-                     </a>
-                  </li>
-                  <li class="login-other__icon--google">
-                     <a href="./index.html">
-                        <i class="fab fa-google-plus-square"></i>
-                     </a>
-                  </li>
+                  <li class="login-other__icon--face"><i class="fab fa-facebook" onclick="location.href='./index.html'"></i></li>
+                  <li class="login-other__icon--twitter"><i class="fab fa-twitter-square" onclick="location.href='./index.html'"></i></li>
+                  <li class="login-other__icon--google"><i class="fab fa-google-plus-square" onclick="location.href='./index.html'"></i></li>
                </ul>
             </div>
          </form>

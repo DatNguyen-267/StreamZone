@@ -12,22 +12,22 @@
 body{
   display: grid;
   place-items: center;
-  background: #dde1e7;
+  background: var(--black-color);
   text-align: center;
 }
 .content{
-  width: 380px;
-  padding: 40px 30px;
-  background:#fff;
+  width: 480px;
+  padding: 40px 40px;
+  background: var(--sub-primary-color);
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #03030373,
-               2px 2px 5px rgba(40, 43, 51, 0.288);
+  /* box-shadow: -3px -3px 7px #03030373,
+               2px 2px 5px rgba(40, 43, 51, 0.288); */
 }
 .header__title{
   font-size: 33px;
   font-weight: 600;
-  margin-bottom: 35px;
-  color:var(--text-color);
+  margin-bottom: 75px;
+  color:var(--white-color);
 }
 .input-acc__name,
 .input-acc__name-acc,
@@ -42,23 +42,23 @@ body{
 }
 .input-acc__name-acc:nth-child(2)
 {
-    margin-top: 20px;
+    margin-top: 30px;
 } 
 .input-acc__name:nth-child(2){
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .input-acc__phone:nth-child(3){
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .input-acc__email:nth-child(4)
 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .input-acc__pass:nth-child(5){
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .input-acc__pre-pass:nth-child(6){
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .input-acc__name-input,
 .input-acc__name-acc-input,
@@ -130,7 +130,8 @@ body{
 }
 
 .sign-up__button{
-  margin: 30px 0;
+  margin-top: 70px;
+  margin-bottom: 35px;
   width: 100%;
   height: 50px;
   font-size: 18px;
@@ -151,45 +152,11 @@ body{
   background-color:rgb(19, 110, 190);
   
 }
-.sign-up-other{
-  margin: 10px 0;
-  font-size: 16px;
-}
-.sign-up-other__text{
-  color: var(--text-color);
-}
-.sign-up-other__group-icon{
-  margin-top: 10px;
-  transform: translateX(-5%);
-  list-style: none;
-}
-.sign-up-other__icon--face,
-.sign-up-other__icon--twitter,
-.sign-up-other__icon--google{
-  display: inline-block;
-  font-size: 250%;
-  margin-left: 20px;
-}
-.sign-up-other__icon--face{
-  color:#0051f3;
-}
-.sign-up-other__icon--twitter{
-  color: #027add;
-}
-.sign-up-other__icon--google{
-  color: #ff3535;
-}
 
-.sign-up-other li i{
-  transition: all 0.3s;
-}
-.sign-up-other i:hover,
-.sign-up-other i:active{
-  transform: scale(1.3);
-}
 .login{
-  margin: 10px 0;
-  color:var(--text-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color:var(--white-color);
   font-size: 16px;
 }
 .login a{
