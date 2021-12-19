@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
 .main {
   position: absolute;
   top: 50px;
@@ -59,6 +70,7 @@
 }
 
 .main__list {
+  margin-top: 20px;
   display: flex;
   overflow-x: hidden;
 }
@@ -67,13 +79,24 @@
   overflow-x: auto;
 }
 
-.main__popular-avatar {
+.main-popular {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-popular__avatar {
   min-width: 100px;
   height: 100px;
-  margin: 30px;
+  margin: 15px;
   border-radius: 50%;
-  background-color: var(--primary-color);
-  cursor: pointer;
+}
+
+
+.main-popular__name {
+  font-size: 150%;
 }
 
 .main__recommend-video {

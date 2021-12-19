@@ -1,17 +1,70 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    margin: 25px auto;
+    font-size: 150%;
+    width: 90%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: rgb(192, 191, 191);
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, 
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #7a7a7a;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #dddddd;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
 .main {
     margin: 0 auto;
     padding-top: 50px;
     height: 100vh;
     width: 60%;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(78, 78, 78);
     display: flex;
 }
 
 .menu {
     height: 100%;
     width: 30%;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(68, 68, 68);
     padding-top: 20px;
+}
+
+.icon {
+    width: 15px;
 }
 
 .menu ul {
@@ -26,6 +79,7 @@
     padding: 15px;
     border-radius: 5px;
     font-size: 200%;
+    color: white;
     cursor: pointer;
 }
 
@@ -42,7 +96,7 @@
 }
 
 .menu__item:hover {
-    background-color: rgb(236, 235, 235);
+    background-color: rgb(99, 99, 99);
 }
 
 .info-panel {
@@ -71,7 +125,10 @@
 
 .info-content {
     padding-top: 50px;
-    
+}
+
+.info-content__label {
+    font-weight: bold;
 }
 
 .info-content ul {
@@ -83,19 +140,92 @@
     margin: 20px;
 }
 
-.follow {
+.my-follow {
+    padding-top: 20px;
+}
+
+.follow-title {
+    font-size: 200%;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.follow-list {
     padding: 10px;
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
 }
 
 .follow__channel {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.follow__channel:hover {
+    background-color: rgb(177, 176, 176);
+}
+
+.follow__icon {
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
-    background-color: var(--primary-color);
     cursor: pointer;
+}
+
+.follow__name {
+    padding-top: 10px;
+    font-size: 150%;
+}
+
+.top-up-history {
+    width: 100%;
+    height: 100%;
+}
+
+.top-up-balance {
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    color: var(--white-color);
+}
+
+.top-up-balance__title {
+    font-size: 200%;
+    margin: 10px;
+}
+
+.top-up-balance__amount {
+    font-size: 300%;
+    margin-left: 20px;
+}
+
+.top-up-balance__icon {
+    width: 20px;
+}
+
+
+.stream-history {
+    padding-top: 20px;
+}
+
+.recent-history__title,
+.all-history__title {
+    font-size: 200%;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.history-list {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
