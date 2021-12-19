@@ -4,6 +4,7 @@ body {
 .app {
     background-color: var(--white-color);
     background-color: var(--theme-black);
+    padding-top: 70px;
 }
 .event-tab {   
     position: relative;

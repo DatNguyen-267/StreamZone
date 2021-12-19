@@ -13,19 +13,23 @@
     <link rel="stylesheet" href="../asset/css/index.css" />
 </head>
     <body>
-        <nav class="header">
-            <a href="index.html">
-                <div class="header__logo"></div>
+        <div class="header">
+            <a class="header__logo" href="index.html">
+                <i class="fab fa-stripe-s"></i>
+                <div class="header__logo-sub-title">Zone</div>
             </a>
-            <div class="header__events-and-tournaments">
-                <a href="./event.html">Sự kiện</a>
-                <a href="#">Tất cả</a>
+            <div class="header__navbar">
+                <a class="header__navbar-item active" href="/view/allstream/allstream.html">Danh sách phát</a>          
+                <a class="header__navbar-item" href="/view/category/category.html">Danh mục</a>
+                <a class="header__navbar-item" href="/view/event.html">Sự kiện</a>
             </div>
             <div class="header__search">
                 <input type="text" placeholder="Search" class="header__search-input" />
-                <button class="header__search-button style-btn-normal style-btn-hover">
-                    <a href="./search/search-total.html">
-                        <img src="../images/search-solid.svg" alt="search" width="20px" />
+                <!-- <button class="header__search-button style-btn-normal style-btn-hover"> -->
+                <button class="header__search-button">
+                    <a href="/view/search/search-total.html">
+                        <i class="fas fa-search"></i>
+                        <!-- <img src="../images/search-solid.svg" alt="search" width="20px" /> -->
                     </a>
                 </button>
             </div>
@@ -37,7 +41,7 @@
                     Sign up
                 </button>
             </div>
-        </nav>
+        </div>
         <main>
             <div class="side-nav">
                 <div class="side-nav__channel-list">
@@ -96,12 +100,15 @@
                         <!-- xypzmu5mMPY -->
                         
                         <div class="main__live-item">
-                            <img src="http://img.youtube.com/vi/xypzmu5mMPY/hqdefault.jpg" alt=""/>
+                            <img src="http://img.youtube.com/vi/M7yaMCkJCKU/maxresdefault.jpg" alt=""/>
                         </div>
                         <div class="main__live-item">
-                            <img src="http://img.youtube.com/vi/IPfJnp1guPc/hqdefault.jpg" alt="" />
+                            <img src="http://img.youtube.com/vi/gsVIm0bmYu8/maxresdefault.jpg" alt="" />
                         </div>
-                    
+                        <div class="main__live-item">
+                            <img src="https://i.ytimg.com/vi/Urs372wBzhQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZsGtB8dAVq78QjqVYOqTTCaaLNg" alt="" />
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="main__popular-channels">
@@ -159,7 +166,7 @@
                     <div class="topstream">
                         <div class="row">
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">20N Người xem</div>
@@ -180,10 +187,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img"
                                             src="https://i.ytimg.com/vi/X5mcY8ecs8I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWJaxNhLDVjqMqoH7wgCYMSfi8mw"></img>
@@ -203,10 +210,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/Urs372wBzhQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZsGtB8dAVq78QjqVYOqTTCaaLNg"></img>
                                         <div class="stream-item__view">533 Người xem</div>
@@ -226,10 +233,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/7h6baPjiTBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy_heNI0Ur6OTAuNwUNyW9bc8xag"></img>
                                         <div class="stream-item__view">989 Người xem</div>
@@ -249,7 +256,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>                    
                         </div>
                     </div>
@@ -259,7 +266,7 @@
                     <div class="topstream">
                         <div class="row">
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/DZDYZ9nRHfU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXmoIBLr3oUfCzSIjLG9IYAoOnXw"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -278,10 +285,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/dLQe4qEfVJw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAweLnbRNek-DgwN6JwQC_AMlIJcg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -300,10 +307,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/Urs372wBzhQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZsGtB8dAVq78QjqVYOqTTCaaLNg"></img>
                                         <div class="stream-item__view">533 Người xem</div>
@@ -323,10 +330,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="https://i.ytimg.com/vi/_tV5LEBDs7w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDx85smR9wIFt8zAeFAZxbZgYVgmg"></img>
                                         <div class="stream-item__view">989 Người xem</div>
@@ -345,7 +352,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>    
                         </div>
                     </div>
@@ -355,7 +362,7 @@
                     <div class="topstream">
                         <div class="row">           
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/M7yaMCkJCKU/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -375,10 +382,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/5phyutCPpkA/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">15 N Người xem</div>
@@ -398,10 +405,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/pJ2TYhV3RS0/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">15 N Người xem</div>
@@ -421,10 +428,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/pJ2TYhV3RS0/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">15 N Người xem</div>
@@ -444,7 +451,7 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                         </div>
                     </div>
@@ -454,7 +461,7 @@
                     <div class="topstream">
                         <div class="row">
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/wvbJ2KQu0j0/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -475,10 +482,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/gsVIm0bmYu8/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -499,10 +506,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/RCogXgXp5OQ/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -523,10 +530,10 @@
                     
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                             <div class="col l-3 m-4 c-6">
-                                <div class="stream-item">
+                                <a class="stream-item" href="./watching.html">
                                     <div class="stream-item__header">
                                         <img class="stream-item__img" src="http://img.youtube.com/vi/wGJY8qHoKb0/maxresdefault.jpg"></img>
                                         <div class="stream-item__view">666 Người xem</div>
@@ -546,7 +553,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </a>  
                             </div>
                         </div>
                     </div>
