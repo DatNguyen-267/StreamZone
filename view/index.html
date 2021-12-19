@@ -1,193 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stream Zone</title>
+    <link rel="stylesheet" href="../../asset/font/fontawesome/css/all.min.css">
 
+    <link rel="stylesheet" href="../asset/css/allstream.css" />
+    <link rel="stylesheet" href="../asset/css/category.css" />
     <link rel="stylesheet" href="../asset/css/base.css" />
+    <link rel="stylesheet" href="../asset/css/grid.css" />
     <link rel="stylesheet" href="../asset/css/index.css" />
-  </head>
-  <body>
-    <nav class="header">
-      <a href="index.html">
-        <div class="header__logo"></div>
-      </a>
-      <div class="header__events-and-tournaments">
-        <a href="./event.html">Sự kiện</a>
-        <a href="#">Tất cả</a>
-      </div>
-      <div class="header__search">
-        <input type="text" placeholder="Search" class="header__search-input" onkeypress="if(event.key == 'Enter') location.href='./search/search-total.html'"/>
-        <button class="header__search-button style-btn-normal style-btn-hover" onclick="location.href='./search/search-total.html'">
-          <img src="../images/search-solid.svg" alt="search" width="20px" />
-        </button>
-      </div>
-      <div class="header__user">
-        <button class="header__user-login-button style-btn-normal" onclick="location.href='./login.html'">Log in</button>
-        <button class="header__user-signup-button style-btn-normal style-btn-hover" onclick="location.href='./sign-up.html'">Sign up</button>
-      </div>
-    </nav>
-    <main>
-      <div class="side-nav">
-        <div class="side-nav__channel-list">
-          <a href="watching.html">
-            <div class="side-nav__channel-item"></div>
-          </a>
-          <a href="watching.html">
-            <div class="side-nav__channel-item"></div>
-          </a>
-          <a href="watching.html">
-            <div class="side-nav__channel-item"></div>
-          </a>
-          <a href="watching.html">
-            <div class="side-nav__channel-item"></div>
-          </a>
-          <a href="watching.html">
-            <div class="side-nav__channel-item"></div>
-          </a>
-        </div>
-      </div>
-      <div class="main">
-        <div class="main__live-area">
-          <div class="main__live-player">
-            <div class="video-container">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/5qap5aO4i9A"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <!-- <div class="control">
-                <div class="play-and-volume">
-                  <button class="play-button">
-                    <img src="./images/play-solid.svg" alt="" width="15px" />
-                  </button>
+</head>
+    <body>
+        <nav class="header">
+            <a href="index.html">
+                <div class="header__logo"></div>
+            </a>
+            <div class="header__events-and-tournaments">
+                <a href="./event.html">Sự kiện</a>
+                <a href="#">Tất cả</a>
+            </div>
+            <div class="header__search">
+                <input type="text" placeholder="Search" class="header__search-input" />
+                <button class="header__search-button style-btn-normal style-btn-hover">
+                    <a href="search-total.html">
+                        <img src="../images/search-solid.svg" alt="search" width="20px" />
+                    </a>
+                </button>
+            </div>
+            <div class="header__user">
+                <button class="header__user-login-button style-btn-normal">
+                Log in
+                </button>
+                <button class="header__user-signup-button style-btn-normal style-btn-hover">
+                    Sign up
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="side-nav">
+                <div class="side-nav__channel-list">
+                    <a href="watching.html">
+                        <div class="side-nav__channel-item"></div>
+                    </a>
+                    <a href="watching.html">
+                        <div class="side-nav__channel-item"></div>
+                    </a>
+                    <a href="watching.html">
+                        <div class="side-nav__channel-item"></div>
+                    </a>
+                    <a href="watching.html">
+                        <div class="side-nav__channel-item"></div>
+                    </a>
+                    <a href="watching.html">
+                        <div class="side-nav__channel-item"></div>
+                    </a>
                 </div>
-                <div class="func-and-full-screen">
-                  <button>
-                    <img
-                      src="./images/external-link-alt-solid.svg"
-                      alt=""
-                      width="15px"
-                    />
-                  </button>
-                  <button class="full-screen-button">
-                    <img src="./images/expand-solid.svg" alt="" width="15px" />
-                  </button>
+            </div>
+            <div class="main">
+                <div class="main__live-area">
+                    <div class="main__live-player">
+                        <div class="video-container">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/5qap5aO4i9A"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <!-- <div class="control">
+                            <div class="play-and-volume">
+                            <button class="play-button">
+                                <img src="./images/play-solid.svg" alt="" width="15px" />
+                            </button>
+                            </div>
+                            <div class="func-and-full-screen">
+                            <button>
+                                <img
+                                src="./images/external-link-alt-solid.svg"
+                                alt=""
+                                width="15px"
+                                />
+                            </button>
+                            <button class="full-screen-button">
+                                <img src="./images/expand-solid.svg" alt="" width="15px" />
+                            </button>
+                            </div>
+                        </div> -->
+                        </div>
+                    </div>
+                    <div class="main__live-list">
+                        <!-- xypzmu5mMPY -->
+                        
+                        <div class="main__live-item">
+                            <img src="http://img.youtube.com/vi/xypzmu5mMPY/hqdefault.jpg" alt=""/>
+                        </div>
+                        <div class="main__live-item">
+                            <img src="http://img.youtube.com/vi/IPfJnp1guPc/hqdefault.jpg" alt="" />
+                        </div>
+                    
+                    </div>
                 </div>
-              </div> -->
+                <div class="main__popular-channels">
+                    <div class="item__header-title">Kênh Nổi Bật</div>
+                    <div class="channel-list">
+                        <div class="row">
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLQC1yRg0N1TGkxh_iNNBsKRc5ZpCiIvxTawQ0eVag=s88-c-k-c0x00ffffff-no-rj"></img>
+                                    <div class="channel-name">Mixi  Gaming</div>
+                                    <div class="channel-sub">5.91 Tr theo dõi</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/0OU9pRiBdUXUJ7_waFILh9NrIREkELJuEsYDj_54MNCJU66xbm1_PgvelQ-xOrnMGoO72uDU6Mg=s176-c-k-c0x00ffffff-no-rj"></img>
+                                    <div class="channel-name">MeoU-isme </div>
+                                    <div class="channel-sub">181 N theo dõi</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLTS2_azBscJod07mZBQaEP8ynpc_bi9fA_7iRw6=s88-c-k-c0x00ffffff-no-rj-mo"></img>
+                                    <div class="channel-name">JustaTee Music</div>
+                                    <div class="channel-sub">1.14 Tr theo dõi</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLSDFXHXy5MOAA2xD7VhPHlqbbudkP32fTs97A2XHQ=s176-c-k-c0x00ffffff-no-rj"></img>
+                                    <div class="channel-name">Action C</div>
+                                    <div class="channel-sub">1.49 Tr theo dõi</div>
+                                </div>
+                            </div>
+                            
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLSlxMNxgQwNrxc-Oja4S5U2SwUG0HNl5Xg8eDWi=s176-c-k-c0x00ffffff-no-rj"></img>
+                                    <div class="channel-name">Cris Devil Gamer</div>
+                                    <div class="channel-sub">10.2 Tr theo dõi</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="channel-item">
+                                    <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLREpG-zpG---Cb9QKbBFLGanNsHEn4FAiRx6AqG=s176-c-k-c0x00ffffff-no-rj"></img>
+                                    <div class="channel-name">Cowsep </div>
+                                    <div class="channel-sub">722 N theo dõi</div>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>   
+                </div>
+                <div class="main__recommend">
+                    <div class="item__header-title">Trực tiếp nổi bật</div>
+                    <div class="topstream">
+                        <div class="row">
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">20N Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQC1yRg0N1TGkxh_iNNBsKRc5ZpCiIvxTawQ0eVag=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
+                                            <div class="stream-item__name">Mixi Gaming</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">GTA</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img"
+                                            src="https://i.ytimg.com/vi/X5mcY8ecs8I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWJaxNhLDVjqMqoH7wgCYMSfi8mw"></img>
+                                        <div class="stream-item__view">989 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/XVUsVVRCmngoCTq3AMcbLzFIoZx7vH6CicHX5cWyM7cU-4j-S6yxYPtcnb6RJBdYp0r7jgavhw=s68-c-k-c0x00ffffff-no-rj"
+                                            alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Ahrix - Nova</div>
+                                            <div class="stream-item__name">Ahrix</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Music</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/Urs372wBzhQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZsGtB8dAVq78QjqVYOqTTCaaLNg"></img>
+                                        <div class="stream-item__view">533 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTce9AESjQbBeWL4n-Rgg1_LotormApxgfm3i2vRw=s68-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Sucker for you</div>
+                                            <div class="stream-item__name">Chillhoods Tracks</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Music</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/7h6baPjiTBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy_heNI0Ur6OTAuNwUNyW9bc8xag"></img>
+                                        <div class="stream-item__view">989 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/rjoh3lshkAiKegUcmzPNVD0OdxYm_uUusUXN5lxEnEoWZyfzpzbwhU7yKN6wr_ZcukKvorXeOQ=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Mood</div>
+                                            <div class="stream-item__name">Dusk Music</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">LOL</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="main__recommend">
+                    <div class="item__header-title">TV Show</div>
+                    <div class="topstream">
+                        <div class="row">
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/DZDYZ9nRHfU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXmoIBLr3oUfCzSIjLG9IYAoOnXw"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLRqa2wyiphRhq5sHUnovvX2i3KSbQYGfeMd0jMcWQ=s88-c-k-c0x00ffffff-no-rj-mo" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">HẾT THƯƠNG CẠN NHỚ</div>
+                                            <div class="stream-item__name">Đức Phúc</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Show</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/dLQe4qEfVJw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAweLnbRNek-DgwN6JwQC_AMlIJcg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQYTjMDgobZqfOd928YXYNBqI2I4MjzPAPm-0LEsQ=s88-c-k-c0x00ffffff-no-rj-mo" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">1 Phút - Andiez</div>
+                                            <div class="stream-item__name">Andiez</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Music</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/Urs372wBzhQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZsGtB8dAVq78QjqVYOqTTCaaLNg"></img>
+                                        <div class="stream-item__view">533 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTce9AESjQbBeWL4n-Rgg1_LotormApxgfm3i2vRw=s68-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Sucker for you</div>
+                                            <div class="stream-item__name">Chillhoods Tracks</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Music</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="https://i.ytimg.com/vi/_tV5LEBDs7w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDx85smR9wIFt8zAeFAZxbZgYVgmg"></img>
+                                        <div class="stream-item__view">989 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLRBxyT5Y9xKYWPmnShA_utGUvcJnxWaFmc0CtWTkg=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Cozy Winter ☕ - [lofi hip hop/study beats]</div>
+                                            <div class="stream-item__name">Lofi</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Music</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="main__recommend">
+                    <div class="item__header-title">Thi đấu</div>
+                    <div class="topstream">
+                        <div class="row">           
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/M7yaMCkJCKU/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTc8hNdj_rUKWCyI3YlPjIpMUFV4gl2gj10EIhfqw=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">LAST CHANCE! NaVi vs Liquid - BLAST Premier - HIGHLIGHTS l CSGO</div>
+                                            <div class="stream-item__name">Mazt</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/5phyutCPpkA/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">15 N Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/sihwH2Lc20ZULOXT7EPKgoRemHdClEM6_9vHVX4pC-7Nma8HlLN3gbcW_SEbASvc1kW-chq9fVY=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">BLAST Premier World Final | NAVI CSGO </div>
+                                            <div class="stream-item__name">NAVI CSGO</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/pJ2TYhV3RS0/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">15 N Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/3kPQ7y5R2_ml_5ckmSioY_IOlV4UuOtothdMq8F-Pyg_F0lgXNcNqiCnmlt0CFefaEs1jfAF0w=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">BLAST Premier World Final, Day 5: Gambit vs. Vitality, NAVI vs. Team Liquid</div>
+                                            <div class="stream-item__name">Blast</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/pJ2TYhV3RS0/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">15 N Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/3kPQ7y5R2_ml_5ckmSioY_IOlV4UuOtothdMq8F-Pyg_F0lgXNcNqiCnmlt0CFefaEs1jfAF0w=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">BLAST Premier World Final, Day 5: Gambit vs. Vitality, NAVI vs. Team Liquid</div>
+                                            <div class="stream-item__name">Blast</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__recommend">
+                    <div class="item__header-title">Liên minh huyền thoại</div>
+                    <div class="topstream">
+                        <div class="row">
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/wvbJ2KQu0j0/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQBuXEEw0JAoH3qRaQIUDX_swZYayVI9symGBAvXg=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">COMBAT "ĐỈNK KOUT" ĐẾN TỪ ANH 7</div>
+                                            <div class="stream-item__name">Optimus</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">LOL</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/gsVIm0bmYu8/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTluWRqX-5YLlD_JhgfKkYx_8p5H2p1LBwMBUPH=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Solo Yasuo - Lưỡng Long Thư Hùng - Vòng Bảng (Ngày 4) - [Thầy Quyền, Thỏ Bảy Màu, Hà Tiều Phu]</div>
+                                            <div class="stream-item__name">VETV7</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">LOL</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/RCogXgXp5OQ/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQBuXEEw0JAoH3qRaQIUDX_swZYayVI9symGBAvXg=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">Vòng Bán Kết (Loại Trực Tiếp) - CKTG 2021 | T1 - DK (Bo5)</div>
+                                            <div class="stream-item__name">Optimus</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">LOL</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="stream-item">
+                                    <div class="stream-item__header">
+                                        <img class="stream-item__img" src="http://img.youtube.com/vi/wGJY8qHoKb0/maxresdefault.jpg"></img>
+                                        <div class="stream-item__view">666 Người xem</div>
+                                        <div class="stream-item__title">Trực tiếp</div>
+                                        <div class="stream-item__coating"></div>
+                                        <i class="stream-item__play fas fa-play"></i>
+                                    </div>
+                                    <div class="stream-item__body">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTluWRqX-5YLlD_JhgfKkYx_8p5H2p1LBwMBUPH=s88-c-k-c0x00ffffff-no-rj" 
+                                        alt="" class="stream-item__avatar">
+                                        <div class="stream-item__info">
+                                            <div class="stream-item__content">[30.10.2016] SSG vs SKT [Chung Kết CKTG 2016 - Ván 5]</div>
+                                            <div class="stream-item__name">VETV7</div>
+                                            <div class="stream-item__topic">
+                                                <div class="stream-item__topic-item">LOL</div>
+                                                <div class="stream-item__topic-item">Game</div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__recommend">
+                    <div class="item__header-title">Các chủ đề khác</div>
+                    <div class="topstream">
+                        <div class="row">
+                            <div class="col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/banner/7312418392AD38C69BA2D666BE7071AD_4ae75ac434ef123a99939f231757ccba.jpg/w500_l0/img.webp"
+                                        alt="" class="category-item__img">
+                                    <div class="category-item__name">Ragnarok</div>
+                                    <div class="category-item__view">7N người xem</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/game/CA20B74C0DF9E8494ADE3907A569AB05_Realmofvalor.png/w500_l0/img.webp" alt=""
+                                        class="category-item__img">
+                                    <div class="category-item__name">ROV</div>
+                                    <div class="category-item__view">1N người xem</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/banner/907E352061A6EE3EF4E58A9B74F4E649_71e179563a513bbb7293c831593c0ed1.jpg/w500_l0/img.webp"
+                                        alt="" class="category-item__img">
+                                    <div class="category-item__name">Tốc chiến</div>
+                                    <div class="category-item__view">17N người xem</div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/banner/CB5F66204E8B6FDBDD052B6FE8EBAF05_Pubgmobile.jpg/w500_l0/img.webp"
+                                        alt="" class="category-item__img">
+                                    <div class="category-item__name">PUBG MOBILE</div>
+                                    <div class="category-item__view">12N người xem</div>
+                                </div>
+                            </div>
+                            <div class=" col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/banner/AC70B1B584EB3EC028D36B90A0DD1932_PESMobile.png/w500_l0/img.webp"
+                                        alt="" class="category-item__img">
+                                    <div class="category-item__name">Pes</div>
+                                    <div class="category-item__view">12N người xem</div>
+                                </div>
+                            </div>
+                            <div class=" col l-2 m-4 c-6">
+                                <div class="category-item ">
+                                    <img src="https://img.nimo.tv/o/banner/E524D3A4150BCB94CCB8835142508A76_FreeFire.jpg/w500_l0/img.webp"
+                                        alt="" class="category-item__img">
+                                    <div class="category-item__name">Free Fire</div>
+                                    <div class="category-item__view">12N người xem</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="main__live-list">
-            <!-- xypzmu5mMPY -->
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/xypzmu5mMPY/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/IPfJnp1guPc/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/7FtXrqq1He8/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/WzzcgUpI1kU/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-            <div class="main__live-item">
-              <img
-                src="http://img.youtube.com/vi/MRbB6B0fjhk/hqdefault.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="main__popular-channels">
-          <h1>Nổi bật</h1>
-          <div class="main__list">
-            <div class="main-popular">
-              <img
-                src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png"
-                class="main-popular__avatar"
-              />
-              <span class="main-popular__name">Mixi Gaming</span>
-            </div>
-            <div class="main-popular">
-              <img
-                src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png"
-                class="main-popular__avatar"
-              />
-              <span class="main-popular__name">Mixi Gaming</span>
-            </div>
-            <div class="main-popular">
-              <img
-                src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png"
-                class="main-popular__avatar"
-              />
-              <span class="main-popular__name">Mixi Gaming</span>
-            </div>
-            <div class="main-popular">
-              <img
-                src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png"
-                class="main-popular__avatar"
-              />
-              <span class="main-popular__name">Mixi Gaming</span>
-            </div>
-          </div>
-        </div>
-        <div class="main__recommend">
-          <h1>Đề xuất</h1>
-          <div class="main__list">
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-            <div class="main__recommend-video"></div>
-          </div>
-        </div>
-        <div class="main__category">
-          <h1>Danh mục</h1>
-          <div class="main__list">
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-            <div class="main__category-item"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+        </main>
+    </body>
 </html>

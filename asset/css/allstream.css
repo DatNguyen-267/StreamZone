@@ -40,7 +40,7 @@ body {
 
 }
 .stream-item {
-    height: 290px;
+    /* height: 290px; */
     margin-bottom: 24px;
     background-color: var(--sub-primary-color);
     overflow: hidden;
@@ -61,9 +61,9 @@ body {
     background-color: darkgray;
 }
 .stream-item__header {
-    height: 159px;
     border-radius: 5px;
     position: relative;
+    /* width: 282px; */
 }   
 .stream-item__img {
     width: 100%;
