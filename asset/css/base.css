@@ -165,6 +165,12 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   background-color: var(--text-color);
 }
+
+.header__user--right {
+  margin-right: 20px;
+  justify-content: flex-end !important;
+}
+
 .header__user-login-button,
 .header__user-signup-button {
   min-width: 100px;
@@ -183,6 +189,18 @@ body::-webkit-scrollbar-thumb {
 }
 .header__user-signup-button {
   background-color: var(--secondary-color);
+}
+
+.header__user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header__user-avatar:hover {
+  transform: scale(1.05);
 }
 
 /* side nav*/

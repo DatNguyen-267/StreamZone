@@ -41,13 +41,30 @@ body {
   height: 75vh;
 }
 
-.main__donate {
+.donate {
+  padding: 10px 20px;
   height: calc(15vh - 50px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.donate__item {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.donate__item:hover {
+  background-color: rgb(156, 156, 156);
 }
 
 .main__chat-channel {
   width: 25%;
   height: calc(100vh - 50px);
+  background-color: white;
 }
 
 .title-container {
