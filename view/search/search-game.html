@@ -8,33 +8,43 @@
   <title>Stream Zone</title>
 
   <link rel="stylesheet" href="../../asset/css/base.css">
+  <link rel="stylesheet" href="../../asset/css/grid.css">
   <link rel="stylesheet" href="../../asset/css/search-game.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <nav class="header">
-    <div class="header__logo"></div>
-    <div class="header__events-and-tournaments">
-      <a href="#">Events</a>
-      <a href="#">Tournaments</a>
-    </div>
-    <div class="header__search">
-      <input type="text" placeholder="Search" class="header__search-input"
-        onkeypress="if(event.key == 'Enter') location.href='./search-total.html'" />
-      <button class="header__search-button style-btn-normal style-btn-hover"
-        onclick="location.href='./search-total.html'">
-        <img src="../../images/search-solid.svg" alt="search" width="20px" />
-      </button>
-    </div>
-    <div class="header__user">
-      <button class="header__user-login-button style-btn-normal" onclick="location.href='../login.html'">Log in</button>
-      <button class="header__user-signup-button style-btn-normal style-btn-hover"
-        onclick="location.href='../sign-up.html'">Sign up</button>
-    </div>
-  </nav>
+  <div class="header">
+            <a class="header__logo" href="index.html">
+                <i class="fab fa-stripe-s"></i>
+                <div class="header__logo-sub-title">Zone</div>
+            </a>
+            <div class="header__navbar">
+                <a class="header__navbar-item active" href="/view/allstream/allstream.html">Danh sách phát</a>          
+                <a class="header__navbar-item" href="/view/category/category.html">Danh mục</a>
+                <a class="header__navbar-item" href="/view/event.html">Sự kiện</a>
+            </div>
+            <div class="header__search">
+                <input type="text" placeholder="Search" class="header__search-input" />
+                <!-- <button class="header__search-button style-btn-normal style-btn-hover"> -->
+                <button class="header__search-button">
+                    <a href="/view/search/search-total.html">
+                        <i class="fas fa-search"></i>
+                        <!-- <img src="../images/search-solid.svg" alt="search" width="20px" /> -->
+                    </a>
+                </button>
+            </div>
+            <div class="header__user">
+                <button class="header__user-login-button style-btn-normal">
+                Log in
+                </button>
+                <button class="header__user-signup-button style-btn-normal style-btn-hover">
+                    Sign up
+                </button>
+            </div>
+        </div>
   <main>
-    <div class="top-nav">
+    <div class="top-nav grid wide">
       <ul>
         <li><a href="./search-total.html">Chung</a></li>
         <li><a href="./search-game.html">Trò chơi</a></li>
@@ -42,7 +52,7 @@
         <li><a href="./search-live.html">Trực tiếp</a></li>
       </ul>
     </div>
-    <div class="main-content">
+    <div class="grid wide">
       <div class="main-content__game">
         <div class="title-bar">
           <div class="title-bar__title">Trò chơi</div>
