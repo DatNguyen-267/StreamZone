@@ -16,8 +16,13 @@
   --theme-black: rgb(29, 29, 29);
   --black-color: rgb(0, 0, 0);
   --sub-primary-color: rgb(29, 29, 29);
+  --sub-primary-color-2: rgb(37, 37, 37);
   --text-color-white: rgb(219, 219, 219);
+  --sub-text-color-white: #ffffff66;
   --border-color-black: rgb(63, 63, 63);
+  --border-color-black-2: #323232;
+  --blue-color-black: rgb(10, 75, 133);
+  --color-test: rgb(30, 30, 30);
 }
 
 * {
@@ -31,6 +36,14 @@ html {
   line-height: 1.6rem;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+.frames {
+    background-color: var(--sub-primary-color-2);
+    padding: 0 16px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    height: 100%;
 }
 /* 
 .grid {
@@ -314,4 +327,42 @@ a {
   border: 1px solid var(--white-color);
   /* color: white; */
   /* font-weight: 600; */
+}
+
+/* INPUT */
+.form-group {
+  font-size: 16px !important;
+}
+.form-group label {
+  font-size: 16px !important;
+  color: var(--sub-text-color-white);
+
+}
+.form-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-control {
+  font-size: 16px !important;
+  background-color: var(--sub-primary-color-2);
+  border: none;
+  color: var(--text-color-white);
+  height: 40px !important;
+}
+.form-control:focus {
+  background-color: var(--sub-primary-color-2);
+  color: var(--text-color-white);
+
+}
+.form-btn {
+  width: 150px;
+  height: 30px;
+  font-size: 13px;
+  border: 1px solid var(--text-color-white);
+  background-color: inherit;
+  color:  var(--text-color-white);
+  border-radius: 3px;
+  margin-left: 16px;
+  font-weight: 600;
 }
