@@ -184,11 +184,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: flex-end;
 }
 
-.header__user--right {
-  margin-right: 20px;
-  justify-content: flex-end !important;
-}
-
 .header__user-login-button,
 .header__user-signup-button {
   min-width: 100px;
@@ -220,6 +215,32 @@ body::-webkit-scrollbar-thumb {
 
 .header__user-avatar:hover {
   transform: scale(1.05);
+}
+
+.balance-amount {
+  background-color: gray;
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.balance-amount__number {
+  margin-right: 5px;
+  color: white;
+  font-size: 150%;
+} 
+
+.header__icon {
+  margin-right: 5px;
+  color: var(--sub-text-color-white);
+  cursor: pointer;
+}
+
+.header__user--right {
+  margin-right: 20px;
+  justify-content: flex-end !important;
 }
 
 /* side nav*/
