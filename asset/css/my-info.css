@@ -271,6 +271,7 @@ a {
 }
 .stream-item__coating{ 
     display: none;
+    visibility: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -280,6 +281,7 @@ a {
 }
 .stream-item__play {
     display: none;
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -296,6 +298,7 @@ a {
 .stream-item:hover .stream-item__play,
 .stream-item:hover .stream-item__coating {
     display: block;
+    visibility: visible;
 }
 .stream-item__avatar {
     width: 45px;
