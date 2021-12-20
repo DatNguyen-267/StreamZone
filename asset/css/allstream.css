@@ -23,21 +23,24 @@ body {
     width: 130px;
     height: 35px;
     /* border: 1px solid rgb(201, 197, 197); */
-    border:none;
+    border: 1px solid var(--border-color-black-2);
     border-radius: 5px;
     margin: 0 8px;
     font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--text-color);
-    background-color: var(--white-color);
+    font-weight: 500;
+    color: rgb(192, 192, 192);
+    background-color: inherit;
     /* box-shadow: 0 2px 6px rgb(207, 204, 204); */
 }
 .category-btn:first-child {
     margin: 0 8px 0 0;
 }
 .category-btn--active{
-    background-color: var(--primary-color); 
+    border: 2px solid var(--border-color-black-2);
+    
     color: var(--white-color);
+    border-color: var(--sub-text-color-white);
+    font-weight: 600;
 }
 .list-stream {
     padding-top: 8px;
