@@ -14,8 +14,9 @@ h1 {
 
 .main__live-area {
   display: flex;
-  height: 85vh;
+  height: 80vh;
   padding: 36px 8px;
+  padding-bottom: 16px;
 }
 
 .main__live-player {
@@ -52,6 +53,7 @@ h1 {
   width: 100%;
   /* object-fit: cover; */
   border-radius: 5px;
+  /* box-shadow: 0 0 0 1rem rgba(0,0,0,0.2); */
 }
 
 .main__live-item:first-child {

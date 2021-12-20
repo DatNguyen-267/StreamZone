@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 /* header */
 .header {
   position: fixed;
-  height: 60px;
+  height: 55px;
   width: 100%;
   z-index: 10;
   display: flex;
