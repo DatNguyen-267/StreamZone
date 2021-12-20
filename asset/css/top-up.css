@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--theme-black);
+    color: var(--white-color);
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color:rgb(131, 131, 131);
+}
+
+.balance {
+    padding-top: 50px;
+    font-size: 200%;
+}
+
+.balance__amount {
+    color: #A38329;
+}
+
+.balance__icon {
+    color: #FFD700;
+}
+
+.method {
+    margin-top: 50px;
+}
+
+.method__wallet {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--white-color);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.method__wallet:hover,
+.amount-item:hover {
+    background-color: rgb(131, 131, 131);
+}
+
+.method__title {
+    font-size: 200%;
+}
+
+.method-list {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.method__wallet-logo {
+    width: 100px;
+}
+
+.method__wallet-title {
+    font-size: 125%;
+}
+
+.choose-amount {
+    margin-top: 50px;
+}
+
+.amount__title {
+    font-size: 200%;
+}
+
+.amount__list {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;;
+}
+
+.amount-item {
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--white-color);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 125%;
+}
+
+.verify-amount {
+    margin-top: 50px;
+}
+
+.verify-button {
+    margin-top: 15px;
+    color: white;
+    min-width: 150px;
+    background-color: var(--primary-color);
+    height: 50px;
+    border: 1px solid transparent;
+    padding: 0 19px;
+    border-radius: 7px;
+    background-color: none;
+    cursor: pointer;
+}
+
+.recharge-amount {
+    font-size: 150%;
+}
+
+.verify-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.policy {
+    color: var(--sub-text-color-white);
+    margin-left: 5px;
+    margin-top: 15px;
+}
