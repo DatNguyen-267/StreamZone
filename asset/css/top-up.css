@@ -9,6 +9,14 @@ body {
     color: var(--white-color);
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color:rgb(131, 131, 131);
+}
+
 .balance {
     padding-top: 50px;
     font-size: 200%;
@@ -61,6 +69,7 @@ body {
 }
 
 .method__wallet-title {
+    font-size: 125%;
 }
 
 .choose-amount {
@@ -87,6 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 125%;
 }
 
 .verify-amount {
@@ -108,9 +118,6 @@ body {
 
 .recharge-amount {
     font-size: 150%;
-}
-
-.button__title {
 }
 
 .verify-button:hover {
