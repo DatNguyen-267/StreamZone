@@ -246,8 +246,18 @@ body::-webkit-scrollbar-thumb {
   margin: 10px;
 }
 
+.header__log-out {
+  font-size: 200%;
+  margin: 10px 0 10px 30px;
+}
+
+.header__live-stream:hover,
+.header__log-out:hover {
+  color: var(--text-color);
+}
+
 .header__user--right {
-  margin-right: 20px;
+  margin-right: 5px;
   justify-content: flex-end !important;
 }
 
