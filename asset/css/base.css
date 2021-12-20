@@ -149,9 +149,9 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  
+  margin-left: 150px;
 }
 .header__search-input {
   border: 0;

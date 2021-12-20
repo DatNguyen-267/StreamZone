@@ -1,5 +1,6 @@
 body{
     background-color: var(--black-color);
+    margin-bottom: 54px;
 }
 main{
     padding-top: 70px;
