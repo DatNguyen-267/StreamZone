@@ -4,129 +4,202 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang cá nhân</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="../../asset/css/base.css" />
     <link rel="stylesheet" href="../../asset/css/my-info.css" />
-    <link rel="stylesheet" href="../../asset/font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="../../asset/font/fontawesome/css/all.min.css"
+    />
   </head>
   <body>
-    <nav class="header">
-      <a href="index.html">
-        <div class="header__logo"></div>
+    <div class="header">
+      <a class="header__logo" href="../index.html">
+        <i class="fab fa-stripe-s"></i>
+        <div class="header__logo-sub-title">Zone</div>
       </a>
-      <div class="header__events-and-tournaments">
-        <a href="../event.html">Sự kiện</a>
-        <a href="#">Tất cả</a>
+      <div class="header__navbar">
+        <a
+          class="header__navbar-item active"
+          href="/view/allstream/allstream.html"
+          >Danh sách phát</a
+        >
+        <a class="header__navbar-item" href="/view/category/category.html"
+          >Danh mục</a
+        >
+        <a class="header__navbar-item" href="/view/event.html">Sự kiện</a>
       </div>
       <div class="header__search">
         <input type="text" placeholder="Search" class="header__search-input" />
-        <button class="header__search-button style-btn-normal style-btn-hover">
-          <img src="../../images/search-solid.svg" alt="search" width="20px" />
+        <!-- <button class="header__search-button style-btn-normal style-btn-hover"> -->
+        <button class="header__search-button">
+          <a href="/view/search/search-total.html">
+            <i class="fas fa-search"></i>
+            <!-- <img src="../images/search-solid.svg" alt="search" width="20px" /> -->
+          </a>
         </button>
       </div>
       <div class="header__user header__user--right">
-        <img src="../../images/avatar.jpg" class="header__user-avatar"/>
-    </div>
-    </nav>
-    <main class="main">
-      <div class="menu">
-        <ul>
-          <li class="menu__item">
-            <a href="../my-info/my-info-information.html">
-              <img src="../../images/user-solid.svg" class="menu__icon" />
-              <span class="menu__title">Thông tin cá nhân</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="../my-info/my-info-follow.html">
-              <img src="../../images/heart-solid.svg" class="menu__icon" />
-              <span class="menu__title">Kênh theo dõi</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="../my-info/my-info-topup-history.html">
-              <img src="../../images/coins-solid.svg" class="menu__icon" />
-              <span class="menu__title">Lịch sử nạp</span>
-            </a>
-          </li>
-          <li class="menu__item menu__item--selected">
-            <a href="../my-info/my-info-stream-history.html">
-              <img
-                src="../../images/broadcast-tower-solid.svg"
-                class="menu__icon"
-              />
-              <span class="menu__title">Lịch sử stream</span>
-            </a>
-          </li>
-        </ul>
+        <img src="../../images/avatar.jpg" class="header__user-avatar" />
       </div>
-      <div class="info-panel">
-        <div class="stream-history">
-          <div class="recent-history">
-            <p class="recent-history__title">Mới stream gần đây</p>
-            <div class="history-list">
+    </div>
+    <div class="grid wide app">
+      <div class="main">
+        <div class="menu">
+          <ul>
+            <li class="menu__item">
+              <a href="../my-info/my-info-information.html">
+                <i class="fas fa-user menu__icon"></i>
+                <span class="menu__title">Thông tin cá nhân</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="../my-info/my-info-follow.html">
+                <i class="fas fa-heart menu__icon"></i>
+                <span class="menu__title">Kênh theo dõi</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="../my-info/my-info-topup-history.html">
+                <i class="fas fa-coins menu__icon"></i>
+                <span class="menu__title">Lịch sử nạp</span>
+              </a>
+            </li>
+            <li class="menu__item menu__item--selected">
+              <a href="../my-info/my-info-stream-history.html">
+                <i class="fas fa-broadcast-tower menu__icon menu__icon--selected"></i>
+                <span class="menu__title">Lịch sử stream</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-panel">
+            <div class="recent-history">
+              <p class="recent-history__title">Mới stream gần đây</p>
+              <div class="history-list">
+                <div class="stream-item">
+                  <div class="stream-item__header">
+                      <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
+                      <div class="stream-item__view">20N Người xem</div>
+                      <div class="stream-item__title">Trực tiếp</div>
+                      <div class="stream-item__coating"></div>
+                      <i class="stream-item__play fas fa-play"></i>
+                  </div>
+                  <div class="stream-item__body">
+                      <div class="stream-item__info">
+                          <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
+                          <div class="stream-item__name">Mixi Gaming</div>
+                          <div class="stream-item__topic">
+                              <div class="stream-item__topic-item">GTA</div>
+                              <div class="stream-item__topic-item">Game</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <div class="stream-item">
                 <div class="stream-item__header">
-                    <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
-                    <div class="stream-item__view">20N Người xem</div>
-                    <div class="stream-item__title">Trực tiếp</div>
-                    <div class="stream-item__coating"></div>
-                    <i class="stream-item__play fas fa-play"></i>
+                  <img class="stream-item__img" src="http://img.youtube.com/vi/wvbJ2KQu0j0/maxresdefault.jpg"></img>
+                  <div class="stream-item__view">666 Người xem</div>
+                  <div class="stream-item__title">Trực tiếp</div>
+                  <div class="stream-item__coating"></div>
+                  <i class="stream-item__play fas fa-play"></i>
                 </div>
                 <div class="stream-item__body">
                     <div class="stream-item__info">
-                        <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
-                        <div class="stream-item__name">Mixi Gaming</div>
-                        <div class="stream-item__topic">
-                            <div class="stream-item__topic-item">GTA</div>
-                            <div class="stream-item__topic-item">Game</div>
-                        </div>
+                      <div class="stream-item__content">COMBAT "ĐỈNK KOUT" ĐẾN TỪ ANH 7</div>
+                      <div class="stream-item__name">Optimus</div>
+                      <div class="stream-item__topic">
+                          <div class="stream-item__topic-item">LOL</div>
+                          <div class="stream-item__topic-item">Game</div>
+                      </div>
                     </div>
                 </div>
             </div>
             <div class="stream-item">
               <div class="stream-item__header">
-                  <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
-                  <div class="stream-item__view">20N Người xem</div>
-                  <div class="stream-item__title">Trực tiếp</div>
-                  <div class="stream-item__coating"></div>
-                  <i class="stream-item__play fas fa-play"></i>
-              </div>
-              <div class="stream-item__body">
-                  <div class="stream-item__info">
-                      <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
-                      <div class="stream-item__name">Mixi Gaming</div>
-                      <div class="stream-item__topic">
-                          <div class="stream-item__topic-item">GTA</div>
-                          <div class="stream-item__topic-item">Game</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="stream-item">
-            <div class="stream-item__header">
-                <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
-                <div class="stream-item__view">20N Người xem</div>
+                <img class="stream-item__img" src="http://img.youtube.com/vi/knW7-x7Y7RE/maxresdefault.jpg"></img>
+                <div class="stream-item__view">279 Người xem</div>
                 <div class="stream-item__title">Trực tiếp</div>
                 <div class="stream-item__coating"></div>
                 <i class="stream-item__play fas fa-play"></i>
-            </div>
-            <div class="stream-item__body">
-                <div class="stream-item__info">
-                    <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
-                    <div class="stream-item__name">Mixi Gaming</div>
+              </div>
+              <div class="stream-item__body">
+                  <div class="stream-item__info">
+                    <div class="stream-item__content">SƠN TÙNG M-TP | HÃY TRAO CHO ANH</div>
+                    <div class="stream-item__name">SƠN TÙNG M-TP</div>
                     <div class="stream-item__topic">
-                        <div class="stream-item__topic-item">GTA</div>
-                        <div class="stream-item__topic-item">Game</div>
+                        <div class="stream-item__topic-item">Music</div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+            </div>
+            </div>
+            <div class="all-history">
+              <p class="recent-history__title">Tất cả</p>
+              <div class="history-list">
+                <div class="stream-item">
+                  <div class="stream-item__header">
+                      <img class="stream-item__img" src="http://img.youtube.com/vi/wVlXTNO9jOQ/maxresdefault.jpg"></img>
+                      <div class="stream-item__view">20N Người xem</div>
+                      <div class="stream-item__title">Trực tiếp</div>
+                      <div class="stream-item__coating"></div>
+                      <i class="stream-item__play fas fa-play"></i>
+                  </div>
+                  <div class="stream-item__body">
+                      <div class="stream-item__info">
+                          <div class="stream-item__content">(GTA V) Ngày chơi chẵn lẻ đen đủi của anh lễ tân MixiMoi.</div>
+                          <div class="stream-item__name">Mixi Gaming</div>
+                          <div class="stream-item__topic">
+                              <div class="stream-item__topic-item">GTA</div>
+                              <div class="stream-item__topic-item">Game</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="stream-item">
+                <div class="stream-item__header">
+                  <img class="stream-item__img" src="http://img.youtube.com/vi/wvbJ2KQu0j0/maxresdefault.jpg"></img>
+                  <div class="stream-item__view">666 Người xem</div>
+                  <div class="stream-item__title">Trực tiếp</div>
+                  <div class="stream-item__coating"></div>
+                  <i class="stream-item__play fas fa-play"></i>
+                </div>
+                <div class="stream-item__body">
+                    <div class="stream-item__info">
+                      <div class="stream-item__content">COMBAT "ĐỈNK KOUT" ĐẾN TỪ ANH 7</div>
+                      <div class="stream-item__name">Optimus</div>
+                      <div class="stream-item__topic">
+                          <div class="stream-item__topic-item">LOL</div>
+                          <div class="stream-item__topic-item">Game</div>
+                      </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="stream-item">
+              <div class="stream-item__header">
+                <img class="stream-item__img" src="http://img.youtube.com/vi/knW7-x7Y7RE/maxresdefault.jpg"></img>
+                <div class="stream-item__view">279 Người xem</div>
+                <div class="stream-item__title">Trực tiếp</div>
+                <div class="stream-item__coating"></div>
+                <i class="stream-item__play fas fa-play"></i>
+              </div>
+              <div class="stream-item__body">
+                  <div class="stream-item__info">
+                    <div class="stream-item__content">SƠN TÙNG M-TP | HÃY TRAO CHO ANH</div>
+                    <div class="stream-item__name">SƠN TÙNG M-TP</div>
+                    <div class="stream-item__topic">
+                        <div class="stream-item__topic-item">Music</div>
+                    </div>
+                  </div>
+              </div>
           </div>
+            </div>
+            </div>
         </div>
       </div>
-      </div>
-    </main>
+    </div>
   </body>
 </html>
