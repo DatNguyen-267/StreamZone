@@ -15,7 +15,7 @@ table {
 }
 
 table thead tr {
-    background-color: rgb(192, 191, 191);
+    background-color: var(--sub-primary-color);
     text-align: left;
     font-weight: bold;
 }
@@ -25,16 +25,9 @@ table td {
     padding: 12px 15px;
 }
 
-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-table tbody tr:nth-child(even) {
-    background-color: #7a7a7a;
-}
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 body {
