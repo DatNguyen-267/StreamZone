@@ -3,10 +3,15 @@
 body {
     background-color:  var(--theme-black);
 }
+.list {
+    margin:36px 0;
+}
 .title {
-    font-size: 2.4rem;
+    font-size: 30px;
     color: var(--white-color);
     margin: 16px 0;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 .category {
     margin: 16px 0;
@@ -46,6 +51,7 @@ body {
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
 }
 .stream-item .stream-item__header{
     /* transition: transform ease-in 0.1s;
@@ -121,8 +127,8 @@ body {
 .stream-item__avatar {
     width: 45px;
     height: 45px;
-    border: 1px solid var(--white-color);
-    box-shadow: 0 1px 2px var(--border-color);
+    border: 1px solid var(--border-color-black);
+    /* box-shadow: 0 1px 2px var(--border-color); */
     border-radius: 50%;
     margin-right: 14px;
 }

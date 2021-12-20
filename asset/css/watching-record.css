@@ -1,113 +1,91 @@
 @font-face {
-  font-family: Roboto;
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--theme-black);
-  color: white;
-  /* background-image: url('../../images/cropped-1920-1080-611981.jpg');
-  background-color: var(--theme-black);
-  background-position: top center;
-  background-size: 100%;
-  background-repeat: repeat; */
+    font-family: Roboto, sans-serif;
+    background-color: var(--theme-black);
+    color: white;
+    /* background-image: url('../../images/cropped-1920-1080-611981.jpg');
+    background-color: var(--theme-black);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat; */
 }
 
-.main {
-  position: absolute;
-  padding: 5% 5% 5%;
-  left: 75px; 
-  /* width: calc(100% - 75px); */
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .interact {
-  width: 75%;
-  height: calc(105vh - 50px);
-  background-color: var(--theme-black);
-  border-radius: 7px;
+    /* background-color: var(--theme-black); */
+    border-radius: 7px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    
 }
-
+.video {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .interact__title {
-  margin-left: 10px;
-  height: 10vh;
-  display: flex;
-  align-items: center;
+    /* margin-left: 10px; */
+    height: 10vh;
+    display: flex;
+    background-color: var(--theme-black);
+    align-items: center;
 }
 
 .interact__avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 .main__live-player {
-  height: 75vh;
-}
-
-.donate {
-  padding: 10px 20px;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-}
-
-.donate__item {
-  padding: auto;
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgb(168, 168, 168);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.donate__item:hover {
-  background-color: rgb(116, 116, 116);
+    height: 100%;
 }
 
 .title-container {
-  margin-left: 20px;
-  height: 10vh;
-  width: 100%;
+    margin-left: 20px;
+    height: 10vh;
+    width: 100%;
 }
 
 .title-container__above {
-  width: 100%;
-  font-size: 250%;
-  font-weight: bold;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
+    width: 100%;
+    font-size: 250%;
+    font-weight: bold;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .action {
-  margin-left: auto;
-  margin-right: 10px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .title-container__below {
-  width: 100%;
-  font-size: 150%;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+    width: 100%;
+    font-size: 150%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .title__button {
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: inherit;
-  border: 1px solid white;
-  cursor: pointer;
-  margin: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: inherit;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 2px;
 }
 
 .title__button-heart:hover {
@@ -119,14 +97,16 @@ body {
 }
 
 .archive-video {
-  margin-top: 40px;
-  padding: 10px;
-  width: 100%;
+    margin-top: 40px;
+    
+    width: 100%;
 }
-
+.archive-video-title {
+    font-size: 24px;
+}
 .archive-video__title {
-  font-size: 250%;
-  margin-bottom: 20px;
+    font-size: 250%;
+    margin-bottom: 20px;
 }
 
 .archive-video-list {
@@ -258,11 +238,10 @@ body {
 
 /* chat box */
 .main__chat-channel {
-  margin-left: 5px;
-  width: 22%;
-  height: calc(105vh - 50px);
-  display: flex;
-  flex-direction: column;
+    margin-left: 5px;
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat{
