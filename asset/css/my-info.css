@@ -343,3 +343,119 @@ a {
     padding: 4px 8px;
     border-radius: 4px;
 }
+.content {
+    flex: 1;
+}
+.data-item{
+    background-color: #353535;
+    border-radius: 8px;
+    padding: 16px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.data-item-header{
+    display: flex;
+    align-items: center;
+}
+.data-item-icon {
+    color: yellow;
+    font-size: 16px;
+    margin-right: 8px;
+}
+.date-item-name{
+    color: #ffffff99;
+    font-size: 16px;
+}
+.data-item-number{
+    color: #ffffff99;
+    font-size: 24px;
+}
+.content-selected {
+    /* margin-left: 16px; */
+    margin-bottom: 16px;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown .btn{
+    background-color: var(--theme-black);
+    border: 1px solid var(--border-color-black-2);
+    padding: 6px 36px;
+    color: white;
+    
+}
+.dropdown .btn i {
+    margin-left: 12px;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    top: 110%;
+    width: 132px;
+    padding: 12px;
+    border: 1px solid var(--border-color-black-2);
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
+.dropdown-item{
+    padding: 8px 22px;
+}
+
+.dropdown button {
+    font-size: 16px;
+    background-color: #353535;
+}
+.dropdown .dropdown-menu {
+    font-size: 16px;
+}
+.chart {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: 12px;
+}
+.chart h1 {
+    line-height: 30px;
+}
+.chart-sub{
+    display: flex;
+    flex-direction: column;
+}
+.chart-sub-item{
+    margin: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+.chart-sub-color{
+    width: 10px;
+    height: 10px;
+    border:1px solid white;
+    margin-right: 8px;
+}
+.chart-sub .chart-sub-item:nth-child(1) .chart-sub-color {
+    border:1px solid white;
+    background-color: white;
+}
+.chart-sub .chart-sub-item:nth-child(2) .chart-sub-color {
+    border:1px solid #FE2c55;
+    background-color: #FE2c55;
+}
+.chart-sub .chart-sub-item:nth-child(3) .chart-sub-color {
+    border:1px solid yellow;
+    background-color: yellow;
+}
+.chart-sub-name{
+    font-size: 14px;
+    color: rgb(204, 203, 203);
+}
+#myChart {
+    margin-top: 10px;
+}
