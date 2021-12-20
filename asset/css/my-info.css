@@ -3,7 +3,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
 }
 
-table {
+.data-table {
     border-collapse: collapse;
     color: white;
     margin: 25px auto;
@@ -14,19 +14,19 @@ table {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table thead tr {
+.data-table thead tr {
     background-color: var(--sub-primary-color);
     text-align: left;
     font-weight: bold;
 }
 
-table th, 
-table td {
+.data-table th, 
+.data-table td {
     padding: 12px 15px;
 }
 
 
-table tbody tr:last-of-type {
+.data-table tbody tr:last-of-type {
     border-bottom: 1px solid #dddddd;
 }
 

@@ -18,14 +18,12 @@ body {
   position: absolute;
   padding: 5% 5% 5%;
   left: 75px; 
-  /* width: calc(100% - 75px); */
   display: flex;
   flex-wrap: wrap;
 }
 
 .interact {
   width: 75%;
-  height: calc(105vh - 50px);
   background-color: var(--theme-black);
   border-radius: 7px;
 }
@@ -46,7 +44,7 @@ body {
 }
 
 .main__live-player {
-  height: 75vh;
+  height: 70vh;
 }
 
 .donate {
@@ -260,7 +258,7 @@ body {
 .main__chat-channel {
   margin-left: 5px;
   width: 22%;
-  height: calc(105vh - 50px);
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
