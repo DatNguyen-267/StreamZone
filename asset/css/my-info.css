@@ -135,6 +135,15 @@ a {
     margin: 20px;
 }
 
+.info-content__edit-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.info-content__edit-icon:hover {
+    color: var(--sub-text-color-white);
+}
+
 .my-follow {
     padding-top: 20px;
 }
@@ -197,16 +206,19 @@ a {
 
 .top-up-balance__title {
     font-size: 200%;
-    margin: 10px;
+    margin: 20px;
 }
 
 .top-up-balance__amount {
     font-size: 300%;
     margin-left: 20px;
+    color: #A38329;
 }
 
 .top-up-balance__icon {
-    width: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #FFD700;
 }
 
 
