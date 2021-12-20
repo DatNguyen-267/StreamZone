@@ -6,114 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang cá nhân</title>
 
+    <link rel="stylesheet" href="../../asset/font/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../asset/css/base.css" />
+    <link rel="stylesheet" href="../../asset/css/grid.css">
     <link rel="stylesheet" href="../../asset/css/my-info.css" />
   </head>
   <body> 
-    <nav class="header">
-      <a href="../index.html">
-        <div class="header__logo"></div>
+    <div class="header">
+      <a class="header__logo" href="../index.html">
+          <i class="fab fa-stripe-s"></i>
+          <div class="header__logo-sub-title">Zone</div>
       </a>
-      <div class="header__events-and-tournaments">
-        <a href="../event.html">Sự kiện</a>
-        <a href="#">Tất cả</a>
+      <div class="header__navbar">
+          <a class="header__navbar-item active" href="/view/allstream/allstream.html">Danh sách phát</a>          
+          <a class="header__navbar-item" href="/view/category/category.html">Danh mục</a>
+          <a class="header__navbar-item" href="/view/event.html">Sự kiện</a>
       </div>
       <div class="header__search">
-        <input type="text" placeholder="Search" class="header__search-input" />
-        <button class="header__search-button style-btn-normal style-btn-hover">
-          <img src="../../images/search-solid.svg" alt="search" width="20px" />
-        </button>
+          <input type="text" placeholder="Search" class="header__search-input" />
+          <!-- <button class="header__search-button style-btn-normal style-btn-hover"> -->
+          <button class="header__search-button">
+              <a href="/view/search/search-total.html">
+                  <i class="fas fa-search"></i>
+                  <!-- <img src="../images/search-solid.svg" alt="search" width="20px" /> -->
+              </a>
+          </button>
       </div>
       <div class="header__user header__user--right">
         <img src="../../images/avatar.jpg" class="header__user-avatar"/>
       </div>
-    </nav>
-    <main class="main">
-      <div class="menu">
-        <ul>
-          <li class="menu__item">
-            <a href="../my-info/my-info-information.html">
-              <img src="../../images/user-solid.svg" class="menu__icon" />
-              <span class="menu__title">Thông tin cá nhân</span>
-            </a>
-          </li>
-          <li class="menu__item menu__item--selected">
-            <a href="../my-info/my-info-follow.html">
-              <img src="../../images/heart-solid.svg" class="menu__icon" />
-              <span class="menu__title">Kênh theo dõi</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="../my-info/my-info-topup-history.html">
-              <img src="../../images/coins-solid.svg" class="menu__icon" />
-              <span class="menu__title">Lịch sử nạp</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="../my-info/my-info-stream-history.html">
-              <img
-                src="../../images/broadcast-tower-solid.svg"
-                class="menu__icon"
-              />
-              <span class="menu__title">Lịch sử stream</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="info-panel">
-        <div class="my-follow">
-          <p class="follow-title">Mới theo dõi</p>
-          <div class="follow-list">
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
+    </div>
+    <main class="grid wide app">
+      <main class="main">
+        <div class="menu">
+          <ul>
+            <li class="menu__item">
+              <a href="../my-info/my-info-information.html">
+                <i class="fas fa-user menu__icon"></i>
+                <span class="menu__title">Thông tin cá nhân</span>
+              </a>
+            </li>
+            <li class="menu__item menu__item--selected">
+              <a href="../my-info/my-info-follow.html">
+                <i class="fas fa-heart menu__icon menu__icon--selected"></i>
+                <span class="menu__title">Kênh theo dõi</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="../my-info/my-info-topup-history.html">
+                <i class="fas fa-coins menu__icon"></i>
+                <span class="menu__title">Lịch sử nạp</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="../my-info/my-info-stream-history.html">
+                <i class="fas fa-broadcast-tower menu__icon"></i>
+                <span class="menu__title">Lịch sử stream</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-panel">
+          <div class="my-follow">
+            <p class="follow-title">Mới theo dõi</p>
+            <div class="follow-list">
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLQC1yRg0N1TGkxh_iNNBsKRc5ZpCiIvxTawQ0eVag=s88-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">Mixi  Gaming</div>
+                <div class="channel-sub">5.91 Tr theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/0OU9pRiBdUXUJ7_waFILh9NrIREkELJuEsYDj_54MNCJU66xbm1_PgvelQ-xOrnMGoO72uDU6Mg=s176-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">MeoU-isme </div>
+                <div class="channel-sub">181 N theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLTS2_azBscJod07mZBQaEP8ynpc_bi9fA_7iRw6=s88-c-k-c0x00ffffff-no-rj-mo"></img>
+                <div class="channel-name">JustaTee Music</div>
+                <div class="channel-sub">1.14 Tr theo dõi</div>
+              </div>
             </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-          </div>
-          <p class="follow-title">Đang theo dõi</p>
-          <div class="follow-list">
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
-            </div>
-            <div class="follow__channel">
-              <img src="https://img.nimo.tv/t/201907081562587247030_1599512126145_avatar.png/w240_l0/img.png" class="follow__icon" />
-              <span class="follow__name">Mixi gaming</span>
+            <p class="follow-title">Đang theo dõi</p>
+            <div class="follow-list">
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLQC1yRg0N1TGkxh_iNNBsKRc5ZpCiIvxTawQ0eVag=s88-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">Mixi  Gaming</div>
+                <div class="channel-sub">5.91 Tr theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/0OU9pRiBdUXUJ7_waFILh9NrIREkELJuEsYDj_54MNCJU66xbm1_PgvelQ-xOrnMGoO72uDU6Mg=s176-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">MeoU-isme </div>
+                <div class="channel-sub">181 N theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLTS2_azBscJod07mZBQaEP8ynpc_bi9fA_7iRw6=s88-c-k-c0x00ffffff-no-rj-mo"></img>
+                <div class="channel-name">JustaTee Music</div>
+                <div class="channel-sub">1.14 Tr theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLSDFXHXy5MOAA2xD7VhPHlqbbudkP32fTs97A2XHQ=s176-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">Action C</div>
+                <div class="channel-sub">1.49 Tr theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLSlxMNxgQwNrxc-Oja4S5U2SwUG0HNl5Xg8eDWi=s176-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">Cris Devil Gamer</div>
+                <div class="channel-sub">10.2 Tr theo dõi</div>
+              </div>
+              <div class="channel-item">
+                <img class="channel-avatar" src="https://yt3.ggpht.com/ytc/AKedOLREpG-zpG---Cb9QKbBFLGanNsHEn4FAiRx6AqG=s176-c-k-c0x00ffffff-no-rj"></img>
+                <div class="channel-name">Cowsep </div>
+                <div class="channel-sub">722 N theo dõi</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
+      
     </main>
   </body>
 </html>

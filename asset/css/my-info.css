@@ -39,7 +39,7 @@ table tbody tr:last-of-type {
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: rgb(49, 49, 49);
+    background-color: var(--theme-black);
     color: white;
 }
 
@@ -48,19 +48,13 @@ a {
 }
 
 .main {
-    margin: 0 auto;
-    padding-top: 50px;
-    height: 100vh;
-    width: 60%;
-    background-color: rgb(78, 78, 78);
     display: flex;
+    flex-direction: row;
 }
 
 .menu {
-    height: 100%;
-    width: 30%;
-    background-color: rgb(68, 68, 68);
-    padding-top: 20px;
+    flex: 0.3;
+    background-color: var(--theme-black);
 }
 
 .icon {
@@ -80,20 +74,26 @@ a {
     padding: 15px;
     border-radius: 5px;
     font-size: 200%;
-    color: white;
+    color: var(--sub-text-color-white);
     cursor: pointer;
 }
 
 .menu__icon {
+    color: var(--sub-text-color-white);
     width: 15px;
 }
 
-.menu__title {
-
+.menu__icon--selected {
+    color: white;
 }
 
-.menu__item--selected {
-    background-color: var(--primary-color);
+.menu__title {
+    margin-left: 10px;
+    color: var(--sub-text-color-white);
+}
+
+.menu__item--selected .menu__title {
+    color: white;
 }
 
 .menu__item:hover {
@@ -101,8 +101,8 @@ a {
 }
 
 .info-panel {
-    height: 100%;
-    width: 70%;
+    flex: 1;
+    background-color: var(--theme-black);
 }
 
 .personal-information {
@@ -114,6 +114,7 @@ a {
     width: 100%;
     height: 200px;
     background-color: orange;
+    border-radius: 7px 7px 0 0;
 }
 
 .background__avatar {
@@ -159,7 +160,7 @@ a {
     gap: 12px;
 }
 
-.follow__channel {
+.channel-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,20 +169,24 @@ a {
     border-radius: 7px;
 }
 
-.follow__channel:hover {
-    background-color: rgb(177, 176, 176);
-}
-
-.follow__icon {
+.channel-avatar {
     width: 125px;
     height: 125px;
     border-radius: 50%;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
-.follow__name {
-    padding-top: 10px;
-    font-size: 150%;
+.channel-name {
+    color: var(--text-color-white);
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.channel-sub{
+    color: var(--sub-text-color-white);
+    font-size: 14px;
 }
 
 .top-up-history {
@@ -211,10 +216,6 @@ a {
     width: 20px;
 }
 
-
-.stream-history {
-    padding-top: 20px;
-}
 
 .recent-history__title,
 .all-history__title {

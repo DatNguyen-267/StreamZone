@@ -14,26 +14,31 @@
     <link rel="stylesheet" href="../asset/css/index.css" />
 </head>
     <body>
-        <nav class="header">
-            <a href="index.html">
-                <div class="header__logo"></div>
+        <div class="header">
+            <a class="header__logo" href="index.html">
+                <i class="fab fa-stripe-s"></i>
+                <div class="header__logo-sub-title">Zone</div>
             </a>
-            <div class="header__events-and-tournaments">
-                <a href="./event.html">Sự kiện</a>
-                <a href="#">Tất cả</a>
+            <div class="header__navbar">
+                <a class="header__navbar-item active" href="/view/allstream/allstream.html">Danh sách phát</a>          
+                <a class="header__navbar-item" href="/view/category/category.html">Danh mục</a>
+                <a class="header__navbar-item" href="/view/event.html">Sự kiện</a>
             </div>
             <div class="header__search">
                 <input type="text" placeholder="Search" class="header__search-input" />
-                <button class="header__search-button style-btn-normal style-btn-hover">
-                    <a href="search-total.html">
-                        <img src="../images/search-solid.svg" alt="search" width="20px" />
+                <!-- <button class="header__search-button style-btn-normal style-btn-hover"> -->
+                <button class="header__search-button">
+                    <a href="/view/search/search-total.html">
+                        <i class="fas fa-search"></i>
+                        <!-- <img src="../images/search-solid.svg" alt="search" width="20px" /> -->
                     </a>
                 </button>
             </div>
             <div class="header__user header__user--right">
+                <i class="fas fa-video"></i>
                 <img src="../../images/avatar.jpg" class="header__user-avatar"/>
             </div>
-        </nav>
+        </div>
         <main>
             <div class="side-nav">
                 <div class="side-nav__channel-list">
