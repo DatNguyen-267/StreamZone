@@ -62,8 +62,102 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s;
+  position: relative;
 }
+.donate__item:hover .buy {
+  display: block;
+}
+.buy{
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top: -165px;
+  left: -16px;
+  background-color: var(--sub-primary-color-2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: none;
+}
+.buy::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25px;
+    top: 140px;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+}
+.buy-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-top: 4px;
+}
+.buy-item {
+  display: flex;
+  flex-direction: row;
+}
+.buy-item-name {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+.price{
+  font-size: 20px;
+  color: #f0bd30;
+  margin-top: 12px;
+}
+.buy-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buy-amount{
+  display: flex;
+  flex-direction: row;
+}
+.buy-amount button {
+    width: 40px;
+    padding: 4px 0;
+    border-radius: 15px;
+    border: none;
+    margin: 0 4px;
+    border: 1px solid var(--border-color-black-2);
+    background-color: var(--border-color-black);
+    color: rgb(212, 211, 211);
+    cursor: pointer;
 
+}
+.buy-amount button.active {
+  border-color:#f0bd30; 
+}
+.buy-footer input {
+  width: 100%;
+  background-color: var(--border-color-black);
+  border: 1px solid var(--border-color-black-2);
+  border-radius: 15px;
+  color: white;
+  outline: none;
+  margin-left: 16px;
+  padding: 8px 16px;
+  background-color: inherit;
+}
+.buy-amount-item{
+
+}
+.send {
+  width: 70px;
+  border: none;
+  border-radius: 15px;
+  background-color: #FE2c55;
+  margin-left: 8px;
+  color: rgb(230, 228, 228);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 12px;
+}
 .donate__item:hover {
   background-color: rgb(116, 116, 116);
 }

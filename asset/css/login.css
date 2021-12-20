@@ -96,10 +96,10 @@ body{
 .forgot-pass{
   text-align: left;
   margin: 40px 0 15px 5px;
+  color:var(--primary-color);
 }
 .forgot-pass__text{
   font-size: 16px;
-  color:var(--primary-color);
   text-decoration: none;
 }
 .forgot-pass:hover .forgot-pass__text{
